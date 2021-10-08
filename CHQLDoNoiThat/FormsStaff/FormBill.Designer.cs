@@ -82,6 +82,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1040, 760);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // tableLayoutPanel2
             // 
@@ -97,6 +98,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1034, 336);
             this.tableLayoutPanel2.TabIndex = 0;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // panel3
             // 
@@ -122,6 +124,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(403, 326);
             this.panel3.TabIndex = 4;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // btnThemSanPham_TaoHoaDon
             // 
@@ -139,6 +142,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.btnThemSanPham_TaoHoaDon.TabStop = false;
             this.btnThemSanPham_TaoHoaDon.Text = "Thêm vào hóa đơn";
             this.btnThemSanPham_TaoHoaDon.UseVisualStyleBackColor = false;
+            this.btnThemSanPham_TaoHoaDon.Click += new System.EventHandler(this.btnThemSanPham_TaoHoaDon_Click);
             // 
             // panel6
             // 
@@ -147,6 +151,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(230, 2);
             this.panel6.TabIndex = 16;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // txtSoLuong
             // 
@@ -157,6 +162,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(230, 25);
             this.txtSoLuong.TabIndex = 15;
+            this.txtSoLuong.TextChanged += new System.EventHandler(this.txtSoLuong_TextChanged);
             // 
             // label8
             // 
@@ -168,6 +174,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.label8.Size = new System.Drawing.Size(94, 28);
             this.label8.TabIndex = 14;
             this.label8.Text = "Số lượng";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // panel5
             // 
@@ -176,6 +183,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(230, 2);
             this.panel5.TabIndex = 13;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // txtDonGia
             // 
@@ -186,6 +194,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(230, 25);
             this.txtDonGia.TabIndex = 12;
+            this.txtDonGia.TextChanged += new System.EventHandler(this.txtDonGia_TextChanged);
             // 
             // btnTaiLai_TaoHoaDon
             // 
@@ -203,6 +212,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.btnTaiLai_TaoHoaDon.TabStop = false;
             this.btnTaiLai_TaoHoaDon.Text = "Tải lại";
             this.btnTaiLai_TaoHoaDon.UseVisualStyleBackColor = false;
+            this.btnTaiLai_TaoHoaDon.Click += new System.EventHandler(this.btnTaiLai_TaoHoaDon_Click);
             // 
             // label6
             // 
@@ -214,6 +224,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.label6.Size = new System.Drawing.Size(83, 28);
             this.label6.TabIndex = 11;
             this.label6.Text = "Đơn giá";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -225,6 +236,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.label7.Size = new System.Drawing.Size(185, 32);
             this.label7.TabIndex = 10;
             this.label7.Text = "Chọn sản phẩm";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // panel4
             // 
@@ -233,6 +245,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(230, 2);
             this.panel4.TabIndex = 9;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // txtUser
             // 
@@ -243,6 +256,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(230, 25);
             this.txtUser.TabIndex = 8;
+            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             // 
             // label10
             // 
@@ -254,6 +268,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.label10.Size = new System.Drawing.Size(139, 28);
             this.label10.TabIndex = 7;
             this.label10.Text = "Tên sản phẩm";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // panel1
             // 
@@ -266,6 +281,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(611, 326);
             this.panel1.TabIndex = 3;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // cmbLoaiSpanPham
             // 
@@ -288,6 +304,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.cmbLoaiSpanPham.Size = new System.Drawing.Size(241, 39);
             this.cmbLoaiSpanPham.TabIndex = 0;
             this.cmbLoaiSpanPham.Texts = "Loại sản phẩm";
+            this.cmbLoaiSpanPham.Load += new System.EventHandler(this.cmbLoaiSpanPham_Load);
             // 
             // dataGridView1
             // 
@@ -300,6 +317,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(604, 272);
             this.dataGridView1.TabIndex = 22;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label9
             // 
@@ -315,6 +333,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.label9.TabIndex = 20;
             this.label9.Text = "Sản phẩm";
             this.label9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // panel12
             // 
@@ -327,6 +346,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(1034, 412);
             this.panel12.TabIndex = 38;
+            this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
             // 
             // panel8
             // 
@@ -336,6 +356,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(769, 57);
             this.panel8.TabIndex = 25;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // btnIn_TaoHoaDon
             // 
@@ -352,6 +373,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.btnIn_TaoHoaDon.TabStop = false;
             this.btnIn_TaoHoaDon.Text = "In hóa đơn";
             this.btnIn_TaoHoaDon.UseVisualStyleBackColor = false;
+            this.btnIn_TaoHoaDon.Click += new System.EventHandler(this.btnIn_TaoHoaDon_Click);
             // 
             // labTongTien_TaoHoaDon
             // 
@@ -363,6 +385,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.labTongTien_TaoHoaDon.TabIndex = 24;
             this.labTongTien_TaoHoaDon.Text = "Tổng tiền:";
             this.labTongTien_TaoHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labTongTien_TaoHoaDon.Click += new System.EventHandler(this.labTongTien_TaoHoaDon_Click);
             // 
             // label11
             // 
@@ -374,6 +397,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.label11.TabIndex = 22;
             this.label11.Text = "Chi tiết hóa đơn";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // dataGridViewChiTietHoaDon
             // 
@@ -386,6 +410,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.dataGridViewChiTietHoaDon.RowTemplate.Height = 24;
             this.dataGridViewChiTietHoaDon.Size = new System.Drawing.Size(940, 309);
             this.dataGridViewChiTietHoaDon.TabIndex = 21;
+            this.dataGridViewChiTietHoaDon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewChiTietHoaDon_CellContentClick);
             // 
             // elipseControl2
             // 

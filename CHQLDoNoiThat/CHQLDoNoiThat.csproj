@@ -49,11 +49,35 @@
     <Compile Include="ComBoBoxControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="CustomControls\TextBoxControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TextBoxControl.Designer.cs">
+      <DependentUpon>TextBoxControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatePickerControl.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ElipseControl.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin\FormCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin\FormCategory.Designer.cs">
+      <DependentUpon>FormCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin\text.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin\text.Designer.cs">
+      <DependentUpon>text.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHomeStaff.cs">
       <SubType>Form</SubType>
@@ -87,6 +111,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomControls\TextBoxControl.resx">
+      <DependentUpon>TextBoxControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin\FormCategory.resx">
+      <DependentUpon>FormCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin\text.resx">
+      <DependentUpon>text.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHomeStaff.resx">
       <DependentUpon>FormHomeStaff.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,5 +179,18 @@
   <ItemGroup>
     <None Include="Resources\calendarWhite.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\category_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistics_26px.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

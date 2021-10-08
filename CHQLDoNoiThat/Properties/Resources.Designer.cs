@@ -93,6 +93,16 @@ namespace CHQLDoNoiThat.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap category_24px {
+            get {
+                object obj = ResourceManager.GetObject("category_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap inventory_flow_32px {
             get {
                 object obj = ResourceManager.GetObject("inventory_flow_32px", resourceCulture);
@@ -106,6 +116,36 @@ namespace CHQLDoNoiThat.Properties {
         internal static System.Drawing.Bitmap order_history_30px {
             get {
                 object obj = ResourceManager.GetObject("order_history_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap product_24px {
+            get {
+                object obj = ResourceManager.GetObject("product_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap staff_24px {
+            get {
+                object obj = ResourceManager.GetObject("staff_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap statistics_26px {
+            get {
+                object obj = ResourceManager.GetObject("statistics_26px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -33,6 +33,11 @@ namespace CHQLDoNoiThat
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelMenu = new System.Windows.Forms.TableLayoutPanel();
+            this.btnLichSuHoaDon_FNhanVien = new System.Windows.Forms.Button();
+            this.btnKho_FNhanVien = new System.Windows.Forms.Button();
+            this.btnTaoHoaDon_FNhanVien = new System.Windows.Forms.Button();
+            this.lblTenDangNhap = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelDesktop = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
@@ -41,11 +46,6 @@ namespace CHQLDoNoiThat
             this.btnClose = new System.Windows.Forms.Label();
             this.btnMaximize = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Label();
-            this.btnLichSuHoaDon_FNhanVien = new System.Windows.Forms.Button();
-            this.btnKho_FNhanVien = new System.Windows.Forms.Button();
-            this.btnTaoHoaDon_FNhanVien = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.elipseControl1 = new ElipseToolDemo.ElipseControl();
             this.elipseControl2 = new ElipseToolDemo.ElipseControl();
             this.elipseControl3 = new ElipseToolDemo.ElipseControl();
@@ -77,7 +77,7 @@ namespace CHQLDoNoiThat
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanelMenu, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblTenDangNhap, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label5, 0, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
@@ -109,6 +109,102 @@ namespace CHQLDoNoiThat
             this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanelMenu.Size = new System.Drawing.Size(260, 640);
             this.tableLayoutPanelMenu.TabIndex = 0;
+            // 
+            // btnLichSuHoaDon_FNhanVien
+            // 
+            this.btnLichSuHoaDon_FNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLichSuHoaDon_FNhanVien.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnLichSuHoaDon_FNhanVien.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnLichSuHoaDon_FNhanVien.FlatAppearance.BorderSize = 0;
+            this.btnLichSuHoaDon_FNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLichSuHoaDon_FNhanVien.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLichSuHoaDon_FNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btnLichSuHoaDon_FNhanVien.Image = global::CHQLDoNoiThat.Properties.Resources.order_history_30px;
+            this.btnLichSuHoaDon_FNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLichSuHoaDon_FNhanVien.Location = new System.Drawing.Point(0, 290);
+            this.btnLichSuHoaDon_FNhanVien.Margin = new System.Windows.Forms.Padding(0);
+            this.btnLichSuHoaDon_FNhanVien.Name = "btnLichSuHoaDon_FNhanVien";
+            this.btnLichSuHoaDon_FNhanVien.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnLichSuHoaDon_FNhanVien.Size = new System.Drawing.Size(260, 60);
+            this.btnLichSuHoaDon_FNhanVien.TabIndex = 21;
+            this.btnLichSuHoaDon_FNhanVien.Text = "   Lịch sử hóa đơn";
+            this.btnLichSuHoaDon_FNhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLichSuHoaDon_FNhanVien.UseVisualStyleBackColor = true;
+            this.btnLichSuHoaDon_FNhanVien.Click += new System.EventHandler(this.btnLichSuHoaDon_FNhanVien_Click);
+            // 
+            // btnKho_FNhanVien
+            // 
+            this.btnKho_FNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnKho_FNhanVien.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnKho_FNhanVien.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnKho_FNhanVien.FlatAppearance.BorderSize = 0;
+            this.btnKho_FNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKho_FNhanVien.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKho_FNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btnKho_FNhanVien.Image = global::CHQLDoNoiThat.Properties.Resources.inventory_flow_32px;
+            this.btnKho_FNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKho_FNhanVien.Location = new System.Drawing.Point(0, 162);
+            this.btnKho_FNhanVien.Margin = new System.Windows.Forms.Padding(0);
+            this.btnKho_FNhanVien.Name = "btnKho_FNhanVien";
+            this.btnKho_FNhanVien.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnKho_FNhanVien.Size = new System.Drawing.Size(260, 60);
+            this.btnKho_FNhanVien.TabIndex = 20;
+            this.btnKho_FNhanVien.Text = "   Kho";
+            this.btnKho_FNhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnKho_FNhanVien.UseVisualStyleBackColor = true;
+            this.btnKho_FNhanVien.Click += new System.EventHandler(this.btnKho_FNhanVien_Click);
+            // 
+            // btnTaoHoaDon_FNhanVien
+            // 
+            this.btnTaoHoaDon_FNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTaoHoaDon_FNhanVien.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnTaoHoaDon_FNhanVien.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnTaoHoaDon_FNhanVien.FlatAppearance.BorderSize = 0;
+            this.btnTaoHoaDon_FNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaoHoaDon_FNhanVien.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaoHoaDon_FNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btnTaoHoaDon_FNhanVien.Image = global::CHQLDoNoiThat.Properties.Resources.bill_30px;
+            this.btnTaoHoaDon_FNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaoHoaDon_FNhanVien.Location = new System.Drawing.Point(0, 34);
+            this.btnTaoHoaDon_FNhanVien.Margin = new System.Windows.Forms.Padding(0);
+            this.btnTaoHoaDon_FNhanVien.Name = "btnTaoHoaDon_FNhanVien";
+            this.btnTaoHoaDon_FNhanVien.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnTaoHoaDon_FNhanVien.Size = new System.Drawing.Size(260, 60);
+            this.btnTaoHoaDon_FNhanVien.TabIndex = 19;
+            this.btnTaoHoaDon_FNhanVien.Text = "   Tạo hóa đơn";
+            this.btnTaoHoaDon_FNhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTaoHoaDon_FNhanVien.UseVisualStyleBackColor = true;
+            this.btnTaoHoaDon_FNhanVien.Click += new System.EventHandler(this.btnTaoHoaDon_FNhanVien_Click);
+            // 
+            // lblTenDangNhap
+            // 
+            this.lblTenDangNhap.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblTenDangNhap.ForeColor = System.Drawing.Color.White;
+            this.lblTenDangNhap.Image = global::CHQLDoNoiThat.Properties.Resources.user_40px;
+            this.lblTenDangNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTenDangNhap.Location = new System.Drawing.Point(3, 15);
+            this.lblTenDangNhap.Name = "lblTenDangNhap";
+            this.lblTenDangNhap.Size = new System.Drawing.Size(174, 50);
+            this.lblTenDangNhap.TabIndex = 0;
+            this.lblTenDangNhap.Text = "    tendangnhap";
+            this.lblTenDangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label5.Location = new System.Drawing.Point(3, 741);
+            this.label5.Name = "label5";
+            this.label5.Padding = new System.Windows.Forms.Padding(11, 0, 0, 5);
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label5.Size = new System.Drawing.Size(188, 38);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "       Đăng xuất";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.UseCompatibleTextRendering = true;
             // 
             // tableLayoutPanel4
             // 
@@ -223,102 +319,6 @@ namespace CHQLDoNoiThat
             this.btnMinimize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
-            // btnLichSuHoaDon_FNhanVien
-            // 
-            this.btnLichSuHoaDon_FNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLichSuHoaDon_FNhanVien.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnLichSuHoaDon_FNhanVien.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnLichSuHoaDon_FNhanVien.FlatAppearance.BorderSize = 0;
-            this.btnLichSuHoaDon_FNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLichSuHoaDon_FNhanVien.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLichSuHoaDon_FNhanVien.ForeColor = System.Drawing.Color.White;
-            this.btnLichSuHoaDon_FNhanVien.Image = global::CHQLDoNoiThat.Properties.Resources.order_history_30px;
-            this.btnLichSuHoaDon_FNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLichSuHoaDon_FNhanVien.Location = new System.Drawing.Point(0, 290);
-            this.btnLichSuHoaDon_FNhanVien.Margin = new System.Windows.Forms.Padding(0);
-            this.btnLichSuHoaDon_FNhanVien.Name = "btnLichSuHoaDon_FNhanVien";
-            this.btnLichSuHoaDon_FNhanVien.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnLichSuHoaDon_FNhanVien.Size = new System.Drawing.Size(260, 60);
-            this.btnLichSuHoaDon_FNhanVien.TabIndex = 21;
-            this.btnLichSuHoaDon_FNhanVien.Text = "   Lịch sử hóa đơn";
-            this.btnLichSuHoaDon_FNhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLichSuHoaDon_FNhanVien.UseVisualStyleBackColor = true;
-            this.btnLichSuHoaDon_FNhanVien.Click += new System.EventHandler(this.btnLichSuHoaDon_FNhanVien_Click);
-            // 
-            // btnKho_FNhanVien
-            // 
-            this.btnKho_FNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnKho_FNhanVien.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnKho_FNhanVien.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnKho_FNhanVien.FlatAppearance.BorderSize = 0;
-            this.btnKho_FNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKho_FNhanVien.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKho_FNhanVien.ForeColor = System.Drawing.Color.White;
-            this.btnKho_FNhanVien.Image = global::CHQLDoNoiThat.Properties.Resources.inventory_flow_32px;
-            this.btnKho_FNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKho_FNhanVien.Location = new System.Drawing.Point(0, 162);
-            this.btnKho_FNhanVien.Margin = new System.Windows.Forms.Padding(0);
-            this.btnKho_FNhanVien.Name = "btnKho_FNhanVien";
-            this.btnKho_FNhanVien.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnKho_FNhanVien.Size = new System.Drawing.Size(260, 60);
-            this.btnKho_FNhanVien.TabIndex = 20;
-            this.btnKho_FNhanVien.Text = "   Kho";
-            this.btnKho_FNhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnKho_FNhanVien.UseVisualStyleBackColor = true;
-            this.btnKho_FNhanVien.Click += new System.EventHandler(this.btnKho_FNhanVien_Click);
-            // 
-            // btnTaoHoaDon_FNhanVien
-            // 
-            this.btnTaoHoaDon_FNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTaoHoaDon_FNhanVien.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnTaoHoaDon_FNhanVien.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnTaoHoaDon_FNhanVien.FlatAppearance.BorderSize = 0;
-            this.btnTaoHoaDon_FNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTaoHoaDon_FNhanVien.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaoHoaDon_FNhanVien.ForeColor = System.Drawing.Color.White;
-            this.btnTaoHoaDon_FNhanVien.Image = global::CHQLDoNoiThat.Properties.Resources.bill_30px;
-            this.btnTaoHoaDon_FNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaoHoaDon_FNhanVien.Location = new System.Drawing.Point(0, 34);
-            this.btnTaoHoaDon_FNhanVien.Margin = new System.Windows.Forms.Padding(0);
-            this.btnTaoHoaDon_FNhanVien.Name = "btnTaoHoaDon_FNhanVien";
-            this.btnTaoHoaDon_FNhanVien.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnTaoHoaDon_FNhanVien.Size = new System.Drawing.Size(260, 60);
-            this.btnTaoHoaDon_FNhanVien.TabIndex = 19;
-            this.btnTaoHoaDon_FNhanVien.Text = "   Tạo hóa đơn";
-            this.btnTaoHoaDon_FNhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTaoHoaDon_FNhanVien.UseVisualStyleBackColor = true;
-            this.btnTaoHoaDon_FNhanVien.Click += new System.EventHandler(this.btnTaoHoaDon_FNhanVien_Click);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Image = global::CHQLDoNoiThat.Properties.Resources.user_40px;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(3, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 50);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "    tendangnhap";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5.Location = new System.Drawing.Point(3, 741);
-            this.label5.Name = "label5";
-            this.label5.Padding = new System.Windows.Forms.Padding(11, 0, 0, 5);
-            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label5.Size = new System.Drawing.Size(188, 38);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "       Đăng xuất";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label5.UseCompatibleTextRendering = true;
-            // 
             // elipseControl1
             // 
             this.elipseControl1.CornerRadius = 30;
@@ -361,7 +361,7 @@ namespace CHQLDoNoiThat
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTenDangNhap;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelDesktop;

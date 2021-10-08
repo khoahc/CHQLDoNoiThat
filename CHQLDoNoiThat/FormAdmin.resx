@@ -117,35 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="calendarWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calendarWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="staff_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\staff_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="product_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\product_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bill_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bill_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="inventory_flow_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\inventory_flow_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="order_history_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\order_history_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="calendarDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calendarDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="category_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\category_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="statistics_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\statistics_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAb5JREFUSEvt
+        lssrRHEUx0fZWNBYTJjxiBL5WyyUnY31lPIo/hOlbCWJhIiNsvLaWXgkKTtJeWw8+/l875ypO8373u7N
+        wqc+0Tnnd0537p07J/HPn8M514lzuIk3+ISPeIF7mMV2Kw8PzTK4jN9YjU9cwIwdDwYNuvEZxQeu4Rjq
+        6lvNPhzFJXxH8YYj1qZ+ONyD97ih/y1cFmp6cR3FD05aKh4YOI26NRo+bOF4YOAsCt2qDgtHD8MacFuT
+        YdHClaEwhWd4aKFAcL4f9aTrY++ycGko0NBzFCcWDgw9VnOt3ISFiiHpH6q/KUsFhh76+oldCxVCIo3X
+        Xolzp5i0VCjoM+B1dO7KQoWQ0LAgVHwOyLfkytyLhQohoYepXr7wwFqUhHyzV+ncq4UKIZHE/FXrI09b
+        KhT0GfQ6OndpoWJIRvlw7VioNBT4hx9bODD0yH+dshYqD0UafoQV7181OJ9/gch4XpsM0itzC8W8haOH
+        Yf4fiTYLRwuDZjD4zyKHtIE8YK2LgLYR/yIwZan64KA2kHKrTyM24RCO4wqqRoRbfQQN4l/2/NDMv97e
+        oa5Oy90t7qPW2/g2jX9qI5H4BdFKHktF/WvgAAAAAElFTkSuQmCC
+</value>
   </data>
 </root>
