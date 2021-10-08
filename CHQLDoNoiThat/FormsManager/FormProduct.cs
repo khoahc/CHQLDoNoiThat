@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CHQLDoNoiThat.FormAdmin
+namespace CHQLDoNoiThat.FormsManager
 {
-    public partial class text : Form
+    public partial class FormProduct : Form
     {
-        public text()
+        public FormProduct()
         {
             InitializeComponent();
+        }
+
+        private void btnXoa_LoaiSanPham_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

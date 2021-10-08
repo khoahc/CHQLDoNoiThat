@@ -113,6 +113,16 @@ namespace CHQLDoNoiThat.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logout_rounded_left_30px {
+            get {
+                object obj = ResourceManager.GetObject("logout_rounded_left_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap order_history_30px {
             get {
                 object obj = ResourceManager.GetObject("order_history_30px", resourceCulture);

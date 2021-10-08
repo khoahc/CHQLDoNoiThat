@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace CHQLDoNoiThat
 {
-    public partial class FormAdmin : Form
+    public partial class FormManager : Form
     {
         private Button currentButton;
         private Form activeForm;
 
-        public FormAdmin()
+        public FormManager()
         {
             InitializeComponent();
         }
@@ -84,20 +84,27 @@ namespace CHQLDoNoiThat
             this.Close();
         }
 
-        private void btnNhanVien_FAdmin_Click(object sender, EventArgs e)
+        private void btnNhanVien_FManager_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnKho_FAdmin_Click(object sender, EventArgs e)
+        private void btnKho_FManager_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-           // OpenChildForm(new FormsStaff.FormInventoty(), sender);
+            OpenChildForm(new FormsManager.FormInventory(), sender);
         }
 
-        private void btnLoaiSanPham_FAdmin_Click(object sender, EventArgs e)
+        private void btnLoaiSanPham_FManager_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender);
+            OpenChildForm(new FormsManager.FormCategory(), sender);
+        }
 
+        private void btnSanPham_FManager_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new FormsManager.FormProduct(), sender);
         }
     }
 }

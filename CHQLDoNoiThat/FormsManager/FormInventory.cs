@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CHQLDoNoiThat.FormAdmin
+namespace CHQLDoNoiThat.FormsManager
 {
-    public partial class FormCategory : Form
+    public partial class FormInventory : Form
     {
-        public FormCategory()
+        public FormInventory()
         {
             InitializeComponent();
         }

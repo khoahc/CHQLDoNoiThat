@@ -18,7 +18,7 @@ namespace CHQLDoNoiThat
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginForm());      
             Application.Run(new FormHomeStaff());
-            Application.Run(new FormAdmin());
+            Application.Run(new FormManager());
         }
     }
 }
