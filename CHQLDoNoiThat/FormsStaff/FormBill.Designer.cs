@@ -56,9 +56,6 @@ namespace CHQLDoNoiThat.FormsStaff
             this.label11 = new System.Windows.Forms.Label();
             this.dataGridViewChiTietHoaDon = new System.Windows.Forms.DataGridView();
             this.elipseControl2 = new ElipseToolDemo.ElipseControl();
-            this.elipseControl3 = new ElipseToolDemo.ElipseControl();
-            this.elipseControl4 = new ElipseToolDemo.ElipseControl();
-            this.elipseControl5 = new ElipseToolDemo.ElipseControl();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -436,21 +433,6 @@ namespace CHQLDoNoiThat.FormsStaff
             this.elipseControl2.CornerRadius = 30;
             this.elipseControl2.TargetControl = this;
             // 
-            // elipseControl3
-            // 
-            this.elipseControl3.CornerRadius = 30;
-            this.elipseControl3.TargetControl = this.btnThemSanPham;
-            // 
-            // elipseControl4
-            // 
-            this.elipseControl4.CornerRadius = 30;
-            this.elipseControl4.TargetControl = this.btnTaiLai;
-            // 
-            // elipseControl5
-            // 
-            this.elipseControl5.CornerRadius = 30;
-            this.elipseControl5.TargetControl = this.btnThanhToan;
-            // 
             // FormBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -506,9 +488,6 @@ namespace CHQLDoNoiThat.FormsStaff
         private System.Windows.Forms.TextBox txtTenSanPham;
         private System.Windows.Forms.Label label10;
         private ElipseToolDemo.ElipseControl elipseControl2;
-        private ElipseToolDemo.ElipseControl elipseControl3;
-        private ElipseToolDemo.ElipseControl elipseControl4;
-        private ElipseToolDemo.ElipseControl elipseControl5;
         private ComboBoxControl cmbLoaiSanPham;
         private System.Windows.Forms.Button btnXoa;
     }

@@ -29,42 +29,39 @@ namespace CHQLDoNoiThat.FormsManager
         /// </summary>
         private void InitializeComponent()
         {
-            this.elipseControl1 = new ElipseToolDemo.ElipseControl();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.cmbTinhTrang = new CHQLDoNoiThat.ComboBoxControl();
+            this.btnTaiLai = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtSoLuong = new CHQLDoNoiThat.CustomControls.TextBoxControl();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtGiaBan = new CHQLDoNoiThat.CustomControls.TextBoxControl();
             this.pictureBoxSanPham = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtId = new CHQLDoNoiThat.CustomControls.TextBoxControl();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtTenSanPham = new CHQLDoNoiThat.CustomControls.TextBoxControl();
             this.lblIdLoaiSanPham = new System.Windows.Forms.Label();
-            this.txtLoaiSanPham = new CHQLDoNoiThat.CustomControls.TextBoxControl();
             this.dataGridViewSanPham = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnTaiLai = new System.Windows.Forms.Button();
+            this.cmbTinhTrang = new CHQLDoNoiThat.ComboBoxControl();
+            this.txtSoLuong = new CHQLDoNoiThat.CustomControls.TextBoxControl();
+            this.txtGiaBan = new CHQLDoNoiThat.CustomControls.TextBoxControl();
+            this.txtId = new CHQLDoNoiThat.CustomControls.TextBoxControl();
+            this.txtTenSanPham = new CHQLDoNoiThat.CustomControls.TextBoxControl();
+            this.txtLoaiSanPham = new CHQLDoNoiThat.CustomControls.TextBoxControl();
+            this.elipseControl1 = new ElipseToolDemo.ElipseControl();
+            this.btnTaiAnhSanPham = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSanPham)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSanPham)).BeginInit();
             this.SuspendLayout();
             // 
-            // elipseControl1
-            // 
-            this.elipseControl1.CornerRadius = 30;
-            this.elipseControl1.TargetControl = this;
-            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.btnTaiAnhSanPham);
             this.panel3.Controls.Add(this.btnTaiLai);
             this.panel3.Controls.Add(this.btnLuu);
             this.panel3.Controls.Add(this.cmbTinhTrang);
@@ -89,27 +86,39 @@ namespace CHQLDoNoiThat.FormsManager
             this.panel3.Size = new System.Drawing.Size(994, 293);
             this.panel3.TabIndex = 6;
             // 
-            // cmbTinhTrang
+            // btnTaiLai
             // 
-            this.cmbTinhTrang.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cmbTinhTrang.BorderColor = System.Drawing.Color.SteelBlue;
-            this.cmbTinhTrang.BorderSize = 1;
-            this.cmbTinhTrang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cmbTinhTrang.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbTinhTrang.ForeColor = System.Drawing.Color.SteelBlue;
-            this.cmbTinhTrang.IconColor = System.Drawing.Color.SteelBlue;
-            this.cmbTinhTrang.Items.AddRange(new object[] {
-            "Còn hàng",
-            "Hết hàng"});
-            this.cmbTinhTrang.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cmbTinhTrang.ListTextColor = System.Drawing.Color.SteelBlue;
-            this.cmbTinhTrang.Location = new System.Drawing.Point(716, 166);
-            this.cmbTinhTrang.MinimumSize = new System.Drawing.Size(130, 30);
-            this.cmbTinhTrang.Name = "cmbTinhTrang";
-            this.cmbTinhTrang.Padding = new System.Windows.Forms.Padding(1);
-            this.cmbTinhTrang.Size = new System.Drawing.Size(224, 30);
-            this.cmbTinhTrang.TabIndex = 30;
-            this.cmbTinhTrang.Texts = "";
+            this.btnTaiLai.AutoSize = true;
+            this.btnTaiLai.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnTaiLai.FlatAppearance.BorderSize = 0;
+            this.btnTaiLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaiLai.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiLai.ForeColor = System.Drawing.Color.White;
+            this.btnTaiLai.Location = new System.Drawing.Point(744, 232);
+            this.btnTaiLai.Margin = new System.Windows.Forms.Padding(0);
+            this.btnTaiLai.Name = "btnTaiLai";
+            this.btnTaiLai.Size = new System.Drawing.Size(105, 40);
+            this.btnTaiLai.TabIndex = 32;
+            this.btnTaiLai.TabStop = false;
+            this.btnTaiLai.Text = "Tải lại";
+            this.btnTaiLai.UseVisualStyleBackColor = false;
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.AutoSize = true;
+            this.btnLuu.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnLuu.FlatAppearance.BorderSize = 0;
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.Location = new System.Drawing.Point(599, 232);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(0);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(105, 40);
+            this.btnLuu.TabIndex = 31;
+            this.btnLuu.TabStop = false;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -133,23 +142,6 @@ namespace CHQLDoNoiThat.FormsManager
             this.label4.TabIndex = 28;
             this.label4.Text = "Số lượng";
             // 
-            // txtSoLuong
-            // 
-            this.txtSoLuong.BorderColor = System.Drawing.Color.SteelBlue;
-            this.txtSoLuong.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtSoLuong.BorderSize = 2;
-            this.txtSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoLuong.ForeColor = System.Drawing.Color.SteelBlue;
-            this.txtSoLuong.Location = new System.Drawing.Point(713, 93);
-            this.txtSoLuong.Multiline = false;
-            this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Padding = new System.Windows.Forms.Padding(7);
-            this.txtSoLuong.PasswordChar = false;
-            this.txtSoLuong.Size = new System.Drawing.Size(227, 39);
-            this.txtSoLuong.TabIndex = 27;
-            this.txtSoLuong.Texts = "";
-            this.txtSoLuong.UnderlinedStyle = true;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -161,28 +153,11 @@ namespace CHQLDoNoiThat.FormsManager
             this.label3.TabIndex = 26;
             this.label3.Text = "Giá bán";
             // 
-            // txtGiaBan
-            // 
-            this.txtGiaBan.BorderColor = System.Drawing.Color.SteelBlue;
-            this.txtGiaBan.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtGiaBan.BorderSize = 2;
-            this.txtGiaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGiaBan.ForeColor = System.Drawing.Color.SteelBlue;
-            this.txtGiaBan.Location = new System.Drawing.Point(713, 29);
-            this.txtGiaBan.Multiline = false;
-            this.txtGiaBan.Name = "txtGiaBan";
-            this.txtGiaBan.Padding = new System.Windows.Forms.Padding(7);
-            this.txtGiaBan.PasswordChar = false;
-            this.txtGiaBan.Size = new System.Drawing.Size(227, 39);
-            this.txtGiaBan.TabIndex = 25;
-            this.txtGiaBan.Texts = "";
-            this.txtGiaBan.UnderlinedStyle = true;
-            // 
             // pictureBoxSanPham
             // 
-            this.pictureBoxSanPham.Location = new System.Drawing.Point(421, 14);
+            this.pictureBoxSanPham.Location = new System.Drawing.Point(421, 3);
             this.pictureBoxSanPham.Name = "pictureBoxSanPham";
-            this.pictureBoxSanPham.Size = new System.Drawing.Size(183, 181);
+            this.pictureBoxSanPham.Size = new System.Drawing.Size(183, 167);
             this.pictureBoxSanPham.TabIndex = 24;
             this.pictureBoxSanPham.TabStop = false;
             // 
@@ -196,23 +171,6 @@ namespace CHQLDoNoiThat.FormsManager
             this.label2.Size = new System.Drawing.Size(125, 28);
             this.label2.TabIndex = 23;
             this.label2.Text = "Id sản phẩm";
-            // 
-            // txtId
-            // 
-            this.txtId.BorderColor = System.Drawing.Color.SteelBlue;
-            this.txtId.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtId.BorderSize = 2;
-            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.ForeColor = System.Drawing.Color.SteelBlue;
-            this.txtId.Location = new System.Drawing.Point(180, 38);
-            this.txtId.Multiline = false;
-            this.txtId.Name = "txtId";
-            this.txtId.Padding = new System.Windows.Forms.Padding(7);
-            this.txtId.PasswordChar = false;
-            this.txtId.Size = new System.Drawing.Size(225, 39);
-            this.txtId.TabIndex = 22;
-            this.txtId.Texts = "";
-            this.txtId.UnderlinedStyle = true;
             // 
             // btnXoa
             // 
@@ -277,23 +235,6 @@ namespace CHQLDoNoiThat.FormsManager
             this.label1.TabIndex = 10;
             this.label1.Text = "Tên sản phẩm";
             // 
-            // txtTenSanPham
-            // 
-            this.txtTenSanPham.BorderColor = System.Drawing.Color.SteelBlue;
-            this.txtTenSanPham.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtTenSanPham.BorderSize = 2;
-            this.txtTenSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenSanPham.ForeColor = System.Drawing.Color.SteelBlue;
-            this.txtTenSanPham.Location = new System.Drawing.Point(180, 149);
-            this.txtTenSanPham.Multiline = false;
-            this.txtTenSanPham.Name = "txtTenSanPham";
-            this.txtTenSanPham.Padding = new System.Windows.Forms.Padding(7);
-            this.txtTenSanPham.PasswordChar = false;
-            this.txtTenSanPham.Size = new System.Drawing.Size(225, 39);
-            this.txtTenSanPham.TabIndex = 9;
-            this.txtTenSanPham.Texts = "";
-            this.txtTenSanPham.UnderlinedStyle = true;
-            // 
             // lblIdLoaiSanPham
             // 
             this.lblIdLoaiSanPham.AutoSize = true;
@@ -304,23 +245,6 @@ namespace CHQLDoNoiThat.FormsManager
             this.lblIdLoaiSanPham.Size = new System.Drawing.Size(144, 28);
             this.lblIdLoaiSanPham.TabIndex = 8;
             this.lblIdLoaiSanPham.Text = "Loại sản phẩm";
-            // 
-            // txtLoaiSanPham
-            // 
-            this.txtLoaiSanPham.BorderColor = System.Drawing.Color.SteelBlue;
-            this.txtLoaiSanPham.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtLoaiSanPham.BorderSize = 2;
-            this.txtLoaiSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLoaiSanPham.ForeColor = System.Drawing.Color.SteelBlue;
-            this.txtLoaiSanPham.Location = new System.Drawing.Point(180, 93);
-            this.txtLoaiSanPham.Multiline = false;
-            this.txtLoaiSanPham.Name = "txtLoaiSanPham";
-            this.txtLoaiSanPham.Padding = new System.Windows.Forms.Padding(7);
-            this.txtLoaiSanPham.PasswordChar = false;
-            this.txtLoaiSanPham.Size = new System.Drawing.Size(225, 39);
-            this.txtLoaiSanPham.TabIndex = 0;
-            this.txtLoaiSanPham.Texts = "";
-            this.txtLoaiSanPham.UnderlinedStyle = true;
             // 
             // dataGridViewSanPham
             // 
@@ -345,39 +269,135 @@ namespace CHQLDoNoiThat.FormsManager
             this.label6.Text = "Danh sách sản phẩm";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnLuu
+            // cmbTinhTrang
             // 
-            this.btnLuu.AutoSize = true;
-            this.btnLuu.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnLuu.FlatAppearance.BorderSize = 0;
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(599, 232);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(0);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(105, 40);
-            this.btnLuu.TabIndex = 31;
-            this.btnLuu.TabStop = false;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = false;
+            this.cmbTinhTrang.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cmbTinhTrang.BorderColor = System.Drawing.Color.SteelBlue;
+            this.cmbTinhTrang.BorderSize = 1;
+            this.cmbTinhTrang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cmbTinhTrang.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTinhTrang.ForeColor = System.Drawing.Color.SteelBlue;
+            this.cmbTinhTrang.IconColor = System.Drawing.Color.SteelBlue;
+            this.cmbTinhTrang.Items.AddRange(new object[] {
+            "Còn hàng",
+            "Hết hàng"});
+            this.cmbTinhTrang.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.cmbTinhTrang.ListTextColor = System.Drawing.Color.SteelBlue;
+            this.cmbTinhTrang.Location = new System.Drawing.Point(716, 166);
+            this.cmbTinhTrang.MinimumSize = new System.Drawing.Size(130, 30);
+            this.cmbTinhTrang.Name = "cmbTinhTrang";
+            this.cmbTinhTrang.Padding = new System.Windows.Forms.Padding(1);
+            this.cmbTinhTrang.Size = new System.Drawing.Size(224, 30);
+            this.cmbTinhTrang.TabIndex = 30;
+            this.cmbTinhTrang.Texts = "";
             // 
-            // btnTaiLai
+            // txtSoLuong
             // 
-            this.btnTaiLai.AutoSize = true;
-            this.btnTaiLai.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnTaiLai.FlatAppearance.BorderSize = 0;
-            this.btnTaiLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTaiLai.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaiLai.ForeColor = System.Drawing.Color.White;
-            this.btnTaiLai.Location = new System.Drawing.Point(744, 232);
-            this.btnTaiLai.Margin = new System.Windows.Forms.Padding(0);
-            this.btnTaiLai.Name = "btnTaiLai";
-            this.btnTaiLai.Size = new System.Drawing.Size(105, 40);
-            this.btnTaiLai.TabIndex = 32;
-            this.btnTaiLai.TabStop = false;
-            this.btnTaiLai.Text = "Tải lại";
-            this.btnTaiLai.UseVisualStyleBackColor = false;
+            this.txtSoLuong.BorderColor = System.Drawing.Color.SteelBlue;
+            this.txtSoLuong.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtSoLuong.BorderSize = 2;
+            this.txtSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoLuong.ForeColor = System.Drawing.Color.SteelBlue;
+            this.txtSoLuong.Location = new System.Drawing.Point(713, 93);
+            this.txtSoLuong.Multiline = false;
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Padding = new System.Windows.Forms.Padding(7);
+            this.txtSoLuong.PasswordChar = false;
+            this.txtSoLuong.Size = new System.Drawing.Size(227, 39);
+            this.txtSoLuong.TabIndex = 27;
+            this.txtSoLuong.Texts = "";
+            this.txtSoLuong.UnderlinedStyle = true;
+            // 
+            // txtGiaBan
+            // 
+            this.txtGiaBan.BorderColor = System.Drawing.Color.SteelBlue;
+            this.txtGiaBan.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtGiaBan.BorderSize = 2;
+            this.txtGiaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiaBan.ForeColor = System.Drawing.Color.SteelBlue;
+            this.txtGiaBan.Location = new System.Drawing.Point(713, 29);
+            this.txtGiaBan.Multiline = false;
+            this.txtGiaBan.Name = "txtGiaBan";
+            this.txtGiaBan.Padding = new System.Windows.Forms.Padding(7);
+            this.txtGiaBan.PasswordChar = false;
+            this.txtGiaBan.Size = new System.Drawing.Size(227, 39);
+            this.txtGiaBan.TabIndex = 25;
+            this.txtGiaBan.Texts = "";
+            this.txtGiaBan.UnderlinedStyle = true;
+            // 
+            // txtId
+            // 
+            this.txtId.BorderColor = System.Drawing.Color.SteelBlue;
+            this.txtId.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtId.BorderSize = 2;
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.ForeColor = System.Drawing.Color.SteelBlue;
+            this.txtId.Location = new System.Drawing.Point(180, 38);
+            this.txtId.Multiline = false;
+            this.txtId.Name = "txtId";
+            this.txtId.Padding = new System.Windows.Forms.Padding(7);
+            this.txtId.PasswordChar = false;
+            this.txtId.Size = new System.Drawing.Size(225, 39);
+            this.txtId.TabIndex = 22;
+            this.txtId.Texts = "";
+            this.txtId.UnderlinedStyle = true;
+            // 
+            // txtTenSanPham
+            // 
+            this.txtTenSanPham.BorderColor = System.Drawing.Color.SteelBlue;
+            this.txtTenSanPham.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtTenSanPham.BorderSize = 2;
+            this.txtTenSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenSanPham.ForeColor = System.Drawing.Color.SteelBlue;
+            this.txtTenSanPham.Location = new System.Drawing.Point(180, 149);
+            this.txtTenSanPham.Multiline = false;
+            this.txtTenSanPham.Name = "txtTenSanPham";
+            this.txtTenSanPham.Padding = new System.Windows.Forms.Padding(7);
+            this.txtTenSanPham.PasswordChar = false;
+            this.txtTenSanPham.Size = new System.Drawing.Size(225, 39);
+            this.txtTenSanPham.TabIndex = 9;
+            this.txtTenSanPham.Texts = "";
+            this.txtTenSanPham.UnderlinedStyle = true;
+            // 
+            // txtLoaiSanPham
+            // 
+            this.txtLoaiSanPham.BorderColor = System.Drawing.Color.SteelBlue;
+            this.txtLoaiSanPham.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtLoaiSanPham.BorderSize = 2;
+            this.txtLoaiSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLoaiSanPham.ForeColor = System.Drawing.Color.SteelBlue;
+            this.txtLoaiSanPham.Location = new System.Drawing.Point(180, 93);
+            this.txtLoaiSanPham.Multiline = false;
+            this.txtLoaiSanPham.Name = "txtLoaiSanPham";
+            this.txtLoaiSanPham.Padding = new System.Windows.Forms.Padding(7);
+            this.txtLoaiSanPham.PasswordChar = false;
+            this.txtLoaiSanPham.Size = new System.Drawing.Size(225, 39);
+            this.txtLoaiSanPham.TabIndex = 0;
+            this.txtLoaiSanPham.Texts = "";
+            this.txtLoaiSanPham.UnderlinedStyle = true;
+            // 
+            // elipseControl1
+            // 
+            this.elipseControl1.CornerRadius = 30;
+            this.elipseControl1.TargetControl = this;
+            // 
+            // btnTaiAnhSanPham
+            // 
+            this.btnTaiAnhSanPham.AutoSize = true;
+            this.btnTaiAnhSanPham.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnTaiAnhSanPham.FlatAppearance.BorderSize = 0;
+            this.btnTaiAnhSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaiAnhSanPham.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiAnhSanPham.ForeColor = System.Drawing.Color.White;
+            this.btnTaiAnhSanPham.Location = new System.Drawing.Point(421, 178);
+            this.btnTaiAnhSanPham.Margin = new System.Windows.Forms.Padding(0);
+            this.btnTaiAnhSanPham.Name = "btnTaiAnhSanPham";
+            this.btnTaiAnhSanPham.Size = new System.Drawing.Size(183, 40);
+            this.btnTaiAnhSanPham.TabIndex = 76;
+            this.btnTaiAnhSanPham.TabStop = false;
+            this.btnTaiAnhSanPham.Text = "Tải ảnh sản phẩm";
+            this.btnTaiAnhSanPham.UseVisualStyleBackColor = false;
+            this.btnTaiAnhSanPham.Click += new System.EventHandler(this.btnTaiAnhSanPham_Click);
             // 
             // FormProduct
             // 
@@ -422,5 +442,6 @@ namespace CHQLDoNoiThat.FormsManager
         private System.Windows.Forms.DataGridView dataGridViewSanPham;
         private System.Windows.Forms.Button btnTaiLai;
         private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnTaiAnhSanPham;
     }
 }

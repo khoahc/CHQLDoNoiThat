@@ -31,7 +31,7 @@ namespace CHQLDoNoiThat.FormsManager
         {
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.btnThanhToan_TaoHoaDon = new System.Windows.Forms.Button();
+            this.btnThanhToan = new System.Windows.Forms.Button();
             this.lblTongTien = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btnThemSanPham = new System.Windows.Forms.Button();
@@ -46,15 +46,12 @@ namespace CHQLDoNoiThat.FormsManager
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtTenSanPham = new System.Windows.Forms.TextBox();
             this.elipseControl2 = new ElipseToolDemo.ElipseControl();
-            this.elipseControl3 = new ElipseToolDemo.ElipseControl();
             this.label6 = new System.Windows.Forms.Label();
-            this.elipseControl5 = new ElipseToolDemo.ElipseControl();
             this.label10 = new System.Windows.Forms.Label();
             this.cmbLoaiSanPham = new CHQLDoNoiThat.ComboBoxControl();
             this.dataGridViewSanPham = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.elipseControl4 = new ElipseToolDemo.ElipseControl();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -72,7 +69,7 @@ namespace CHQLDoNoiThat.FormsManager
             // panel8
             // 
             this.panel8.Controls.Add(this.btnXoa);
-            this.panel8.Controls.Add(this.btnThanhToan_TaoHoaDon);
+            this.panel8.Controls.Add(this.btnThanhToan);
             this.panel8.Controls.Add(this.lblTongTien);
             this.panel8.Location = new System.Drawing.Point(138, 346);
             this.panel8.Name = "panel8";
@@ -95,21 +92,21 @@ namespace CHQLDoNoiThat.FormsManager
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
             // 
-            // btnThanhToan_TaoHoaDon
+            // btnThanhToan
             // 
-            this.btnThanhToan_TaoHoaDon.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnThanhToan_TaoHoaDon.FlatAppearance.BorderSize = 0;
-            this.btnThanhToan_TaoHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThanhToan_TaoHoaDon.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThanhToan_TaoHoaDon.ForeColor = System.Drawing.Color.White;
-            this.btnThanhToan_TaoHoaDon.Location = new System.Drawing.Point(558, 6);
-            this.btnThanhToan_TaoHoaDon.Margin = new System.Windows.Forms.Padding(0);
-            this.btnThanhToan_TaoHoaDon.Name = "btnThanhToan_TaoHoaDon";
-            this.btnThanhToan_TaoHoaDon.Size = new System.Drawing.Size(158, 39);
-            this.btnThanhToan_TaoHoaDon.TabIndex = 23;
-            this.btnThanhToan_TaoHoaDon.TabStop = false;
-            this.btnThanhToan_TaoHoaDon.Text = "Thanh toán";
-            this.btnThanhToan_TaoHoaDon.UseVisualStyleBackColor = false;
+            this.btnThanhToan.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnThanhToan.FlatAppearance.BorderSize = 0;
+            this.btnThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThanhToan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThanhToan.ForeColor = System.Drawing.Color.White;
+            this.btnThanhToan.Location = new System.Drawing.Point(558, 6);
+            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(0);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(158, 39);
+            this.btnThanhToan.TabIndex = 23;
+            this.btnThanhToan.TabStop = false;
+            this.btnThanhToan.Text = "Thanh toán";
+            this.btnThanhToan.UseVisualStyleBackColor = false;
             // 
             // lblTongTien
             // 
@@ -260,11 +257,6 @@ namespace CHQLDoNoiThat.FormsManager
             this.elipseControl2.CornerRadius = 30;
             this.elipseControl2.TargetControl = this;
             // 
-            // elipseControl3
-            // 
-            this.elipseControl3.CornerRadius = 30;
-            this.elipseControl3.TargetControl = this.btnThemSanPham;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -275,11 +267,6 @@ namespace CHQLDoNoiThat.FormsManager
             this.label6.Size = new System.Drawing.Size(83, 28);
             this.label6.TabIndex = 11;
             this.label6.Text = "Đơn giá";
-            // 
-            // elipseControl5
-            // 
-            this.elipseControl5.CornerRadius = 30;
-            this.elipseControl5.TargetControl = this.btnThanhToan_TaoHoaDon;
             // 
             // label10
             // 
@@ -352,11 +339,6 @@ namespace CHQLDoNoiThat.FormsManager
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(611, 326);
             this.panel1.TabIndex = 3;
-            // 
-            // elipseControl4
-            // 
-            this.elipseControl4.CornerRadius = 30;
-            this.elipseControl4.TargetControl = this.btnTaiLai;
             // 
             // panel3
             // 
@@ -455,7 +437,7 @@ namespace CHQLDoNoiThat.FormsManager
         #endregion
 
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button btnThanhToan_TaoHoaDon;
+        private System.Windows.Forms.Button btnThanhToan;
         private System.Windows.Forms.Label lblTongTien;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnThemSanPham;
@@ -480,9 +462,6 @@ namespace CHQLDoNoiThat.FormsManager
         private System.Windows.Forms.DataGridView dataGridViewSanPham;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel12;
-        private ElipseToolDemo.ElipseControl elipseControl3;
-        private ElipseToolDemo.ElipseControl elipseControl5;
-        private ElipseToolDemo.ElipseControl elipseControl4;
         private System.Windows.Forms.Button btnXoa;
     }
 }

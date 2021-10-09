@@ -103,6 +103,16 @@ namespace CHQLDoNoiThat.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap crown_100px {
+            get {
+                object obj = ResourceManager.GetObject("crown_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap inventory_flow_32px {
             get {
                 object obj = ResourceManager.GetObject("inventory_flow_32px", resourceCulture);
@@ -116,6 +126,26 @@ namespace CHQLDoNoiThat.Properties {
         internal static System.Drawing.Bitmap logout_rounded_left_30px {
             get {
                 object obj = ResourceManager.GetObject("logout_rounded_left_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap money_100px {
+            get {
+                object obj = ResourceManager.GetObject("money_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap money_32px {
+            get {
+                object obj = ResourceManager.GetObject("money_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +196,16 @@ namespace CHQLDoNoiThat.Properties {
         internal static System.Drawing.Bitmap user_40px {
             get {
                 object obj = ResourceManager.GetObject("user_40px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wink_100px {
+            get {
+                object obj = ResourceManager.GetObject("wink_100px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

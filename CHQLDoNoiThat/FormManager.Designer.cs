@@ -31,6 +31,8 @@ namespace CHQLDoNoiThat
         {
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelDesktop = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -38,18 +40,21 @@ namespace CHQLDoNoiThat
             this.btnMaximize = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblTenDangNhap = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanelMenu = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblTenDangNhap = new System.Windows.Forms.Label();
+            this.lblDangXuat = new System.Windows.Forms.Label();
             this.btnThongKe_FManager = new System.Windows.Forms.Button();
-            this.btnTaoHoaDon_TManager = new System.Windows.Forms.Button();
+            this.btnTaoHoaDon_FManager = new System.Windows.Forms.Button();
             this.btnLichSuHoaDon_FManager = new System.Windows.Forms.Button();
             this.btnNhanVien_FManager = new System.Windows.Forms.Button();
             this.btnSanPham_FManager = new System.Windows.Forms.Button();
             this.btnKho_FManager = new System.Windows.Forms.Button();
             this.btnLoaiSanPham_FManager = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanelDesktop.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -79,6 +84,7 @@ namespace CHQLDoNoiThat
             this.tableLayoutPanelDesktop.ColumnCount = 2;
             this.tableLayoutPanelDesktop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 97F));
             this.tableLayoutPanelDesktop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.tableLayoutPanelDesktop.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelDesktop.Location = new System.Drawing.Point(0, 40);
             this.tableLayoutPanelDesktop.Margin = new System.Windows.Forms.Padding(0);
@@ -88,7 +94,29 @@ namespace CHQLDoNoiThat
             this.tableLayoutPanelDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
             this.tableLayoutPanelDesktop.Size = new System.Drawing.Size(1040, 760);
             this.tableLayoutPanelDesktop.TabIndex = 0;
-            this.tableLayoutPanelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanelDesktop_Paint);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1002, 723);
+            this.panel1.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(153, 327);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(689, 51);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Chúc bạn một ngày làm việc hiệu quả";
             // 
             // tableLayoutPanel6
             // 
@@ -176,7 +204,7 @@ namespace CHQLDoNoiThat
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.lblTenDangNhap, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label5, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lblDangXuat, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanelMenu, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
@@ -189,43 +217,12 @@ namespace CHQLDoNoiThat
             this.tableLayoutPanel2.Size = new System.Drawing.Size(260, 800);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // lblTenDangNhap
-            // 
-            this.lblTenDangNhap.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblTenDangNhap.ForeColor = System.Drawing.Color.White;
-            this.lblTenDangNhap.Image = global::CHQLDoNoiThat.Properties.Resources.user_40px;
-            this.lblTenDangNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblTenDangNhap.Location = new System.Drawing.Point(3, 15);
-            this.lblTenDangNhap.Name = "lblTenDangNhap";
-            this.lblTenDangNhap.Size = new System.Drawing.Size(174, 50);
-            this.lblTenDangNhap.TabIndex = 0;
-            this.lblTenDangNhap.Text = "    tendangnhap";
-            this.lblTenDangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Image = global::CHQLDoNoiThat.Properties.Resources.logout_rounded_left_30px;
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5.Location = new System.Drawing.Point(3, 741);
-            this.label5.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.label5.Name = "label5";
-            this.label5.Padding = new System.Windows.Forms.Padding(11, 0, 0, 5);
-            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label5.Size = new System.Drawing.Size(188, 38);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "     Đăng xuất";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label5.UseCompatibleTextRendering = true;
-            // 
             // tableLayoutPanelMenu
             // 
             this.tableLayoutPanelMenu.ColumnCount = 1;
             this.tableLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelMenu.Controls.Add(this.btnThongKe_FManager, 0, 6);
-            this.tableLayoutPanelMenu.Controls.Add(this.btnTaoHoaDon_TManager, 0, 4);
+            this.tableLayoutPanelMenu.Controls.Add(this.btnTaoHoaDon_FManager, 0, 4);
             this.tableLayoutPanelMenu.Controls.Add(this.btnLichSuHoaDon_FManager, 0, 5);
             this.tableLayoutPanelMenu.Controls.Add(this.btnNhanVien_FManager, 0, 0);
             this.tableLayoutPanelMenu.Controls.Add(this.btnSanPham_FManager, 0, 2);
@@ -244,6 +241,54 @@ namespace CHQLDoNoiThat
             this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanelMenu.Size = new System.Drawing.Size(254, 634);
             this.tableLayoutPanelMenu.TabIndex = 17;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1300, 800);
+            this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // lblTenDangNhap
+            // 
+            this.lblTenDangNhap.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblTenDangNhap.ForeColor = System.Drawing.Color.White;
+            this.lblTenDangNhap.Image = global::CHQLDoNoiThat.Properties.Resources.user_40px;
+            this.lblTenDangNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTenDangNhap.Location = new System.Drawing.Point(3, 15);
+            this.lblTenDangNhap.Name = "lblTenDangNhap";
+            this.lblTenDangNhap.Size = new System.Drawing.Size(174, 50);
+            this.lblTenDangNhap.TabIndex = 0;
+            this.lblTenDangNhap.Text = "    tendangnhap";
+            this.lblTenDangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTenDangNhap.Click += new System.EventHandler(this.lblTenDangNhap_Click);
+            // 
+            // lblDangXuat
+            // 
+            this.lblDangXuat.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblDangXuat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDangXuat.ForeColor = System.Drawing.Color.White;
+            this.lblDangXuat.Image = global::CHQLDoNoiThat.Properties.Resources.logout_rounded_left_30px;
+            this.lblDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDangXuat.Location = new System.Drawing.Point(3, 741);
+            this.lblDangXuat.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.lblDangXuat.Name = "lblDangXuat";
+            this.lblDangXuat.Padding = new System.Windows.Forms.Padding(11, 0, 0, 5);
+            this.lblDangXuat.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblDangXuat.Size = new System.Drawing.Size(188, 38);
+            this.lblDangXuat.TabIndex = 16;
+            this.lblDangXuat.Text = "     Đăng xuất";
+            this.lblDangXuat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDangXuat.UseCompatibleTextRendering = true;
+            this.lblDangXuat.Click += new System.EventHandler(this.lblDangXuat_Click);
             // 
             // btnThongKe_FManager
             // 
@@ -265,28 +310,29 @@ namespace CHQLDoNoiThat
             this.btnThongKe_FManager.Text = "   Thống kê";
             this.btnThongKe_FManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThongKe_FManager.UseVisualStyleBackColor = true;
+            this.btnThongKe_FManager.Click += new System.EventHandler(this.btnThongKe_FManager_Click);
             // 
-            // btnTaoHoaDon_TManager
+            // btnTaoHoaDon_FManager
             // 
-            this.btnTaoHoaDon_TManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTaoHoaDon_TManager.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnTaoHoaDon_TManager.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnTaoHoaDon_TManager.FlatAppearance.BorderSize = 0;
-            this.btnTaoHoaDon_TManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTaoHoaDon_TManager.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaoHoaDon_TManager.ForeColor = System.Drawing.Color.White;
-            this.btnTaoHoaDon_TManager.Image = global::CHQLDoNoiThat.Properties.Resources.bill_30px;
-            this.btnTaoHoaDon_TManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaoHoaDon_TManager.Location = new System.Drawing.Point(0, 375);
-            this.btnTaoHoaDon_TManager.Margin = new System.Windows.Forms.Padding(0);
-            this.btnTaoHoaDon_TManager.Name = "btnTaoHoaDon_TManager";
-            this.btnTaoHoaDon_TManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnTaoHoaDon_TManager.Size = new System.Drawing.Size(254, 60);
-            this.btnTaoHoaDon_TManager.TabIndex = 24;
-            this.btnTaoHoaDon_TManager.Text = "   Tạo hóa đơn";
-            this.btnTaoHoaDon_TManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTaoHoaDon_TManager.UseVisualStyleBackColor = true;
-            this.btnTaoHoaDon_TManager.Click += new System.EventHandler(this.btnTaoHoaDon_TManager_Click);
+            this.btnTaoHoaDon_FManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTaoHoaDon_FManager.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnTaoHoaDon_FManager.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnTaoHoaDon_FManager.FlatAppearance.BorderSize = 0;
+            this.btnTaoHoaDon_FManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaoHoaDon_FManager.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaoHoaDon_FManager.ForeColor = System.Drawing.Color.White;
+            this.btnTaoHoaDon_FManager.Image = global::CHQLDoNoiThat.Properties.Resources.bill_30px;
+            this.btnTaoHoaDon_FManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaoHoaDon_FManager.Location = new System.Drawing.Point(0, 375);
+            this.btnTaoHoaDon_FManager.Margin = new System.Windows.Forms.Padding(0);
+            this.btnTaoHoaDon_FManager.Name = "btnTaoHoaDon_FManager";
+            this.btnTaoHoaDon_FManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnTaoHoaDon_FManager.Size = new System.Drawing.Size(254, 60);
+            this.btnTaoHoaDon_FManager.TabIndex = 24;
+            this.btnTaoHoaDon_FManager.Text = "   Tạo hóa đơn";
+            this.btnTaoHoaDon_FManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTaoHoaDon_FManager.UseVisualStyleBackColor = true;
+            this.btnTaoHoaDon_FManager.Click += new System.EventHandler(this.btnTaoHoaDon_FManager_Click);
             // 
             // btnLichSuHoaDon_FManager
             // 
@@ -398,20 +444,14 @@ namespace CHQLDoNoiThat
             this.btnLoaiSanPham_FManager.UseVisualStyleBackColor = true;
             this.btnLoaiSanPham_FManager.Click += new System.EventHandler(this.btnLoaiSanPham_FManager_Click);
             // 
-            // tableLayoutPanel1
+            // label1
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1300, 800);
-            this.tableLayoutPanel1.TabIndex = 1;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Image = global::CHQLDoNoiThat.Properties.Resources.wink_100px;
+            this.label1.Location = new System.Drawing.Point(315, 175);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(346, 152);
+            this.label1.TabIndex = 0;
             // 
             // FormManager
             // 
@@ -425,6 +465,9 @@ namespace CHQLDoNoiThat
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanelDesktop.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -449,12 +492,15 @@ namespace CHQLDoNoiThat
         private System.Windows.Forms.Button btnLoaiSanPham_FManager;
         private System.Windows.Forms.Button btnNhanVien_FManager;
         private System.Windows.Forms.Label lblTenDangNhap;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblDangXuat;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnThongKe_FManager;
         private System.Windows.Forms.Button btnSanPham_FManager;
         private System.Windows.Forms.Button btnKho_FManager;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelMenu;
-        private System.Windows.Forms.Button btnTaoHoaDon_TManager;
+        private System.Windows.Forms.Button btnTaoHoaDon_FManager;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

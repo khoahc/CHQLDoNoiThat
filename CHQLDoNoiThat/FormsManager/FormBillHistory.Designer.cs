@@ -32,6 +32,8 @@ namespace CHQLDoNoiThat.FormsManager
             this.elipseControl1 = new ElipseToolDemo.ElipseControl();
             this.datePickerControlLichSuHoaDon = new CHQLDoNoiThat.DatePickerControl();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnTaiLai = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtSoLuong = new CHQLDoNoiThat.CustomControls.TextBoxControl();
             this.datePickerControlNgayTao = new CHQLDoNoiThat.DatePickerControl();
@@ -51,8 +53,6 @@ namespace CHQLDoNoiThat.FormsManager
             this.txtTenNhanVien = new CHQLDoNoiThat.CustomControls.TextBoxControl();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnTaiLai = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -67,7 +67,7 @@ namespace CHQLDoNoiThat.FormsManager
             this.datePickerControlLichSuHoaDon.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.datePickerControlLichSuHoaDon.BorderSize = 0;
             this.datePickerControlLichSuHoaDon.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datePickerControlLichSuHoaDon.Location = new System.Drawing.Point(14, 289);
+            this.datePickerControlLichSuHoaDon.Location = new System.Drawing.Point(14, 302);
             this.datePickerControlLichSuHoaDon.Margin = new System.Windows.Forms.Padding(33, 10, 3, 3);
             this.datePickerControlLichSuHoaDon.MinimumSize = new System.Drawing.Size(4, 35);
             this.datePickerControlLichSuHoaDon.Name = "datePickerControlLichSuHoaDon";
@@ -99,11 +99,45 @@ namespace CHQLDoNoiThat.FormsManager
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.lblIdLoaiSanPham);
             this.panel3.Controls.Add(this.txtTenNhanVien);
-            this.panel3.Location = new System.Drawing.Point(14, 14);
+            this.panel3.Location = new System.Drawing.Point(14, 33);
             this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1012, 260);
+            this.panel3.Size = new System.Drawing.Size(999, 241);
             this.panel3.TabIndex = 41;
+            // 
+            // btnTaiLai
+            // 
+            this.btnTaiLai.AutoSize = true;
+            this.btnTaiLai.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnTaiLai.FlatAppearance.BorderSize = 0;
+            this.btnTaiLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaiLai.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiLai.ForeColor = System.Drawing.Color.White;
+            this.btnTaiLai.Location = new System.Drawing.Point(806, 196);
+            this.btnTaiLai.Margin = new System.Windows.Forms.Padding(0);
+            this.btnTaiLai.Name = "btnTaiLai";
+            this.btnTaiLai.Size = new System.Drawing.Size(105, 40);
+            this.btnTaiLai.TabIndex = 41;
+            this.btnTaiLai.TabStop = false;
+            this.btnTaiLai.Text = "Tải lại";
+            this.btnTaiLai.UseVisualStyleBackColor = false;
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.AutoSize = true;
+            this.btnLuu.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnLuu.FlatAppearance.BorderSize = 0;
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.Location = new System.Drawing.Point(626, 196);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(0);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(105, 40);
+            this.btnLuu.TabIndex = 40;
+            this.btnLuu.TabStop = false;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -354,11 +388,11 @@ namespace CHQLDoNoiThat.FormsManager
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 330);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 355);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1012, 341);
+            this.dataGridView1.Size = new System.Drawing.Size(999, 393);
             this.dataGridView1.TabIndex = 42;
             // 
             // label6
@@ -366,45 +400,11 @@ namespace CHQLDoNoiThat.FormsManager
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label6.Location = new System.Drawing.Point(438, 289);
+            this.label6.Location = new System.Drawing.Point(438, 307);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(157, 28);
             this.label6.TabIndex = 43;
             this.label6.Text = "Lịch sử hóa đơn";
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.AutoSize = true;
-            this.btnLuu.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnLuu.FlatAppearance.BorderSize = 0;
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(626, 196);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(0);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(105, 40);
-            this.btnLuu.TabIndex = 40;
-            this.btnLuu.TabStop = false;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = false;
-            // 
-            // btnTaiLai
-            // 
-            this.btnTaiLai.AutoSize = true;
-            this.btnTaiLai.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnTaiLai.FlatAppearance.BorderSize = 0;
-            this.btnTaiLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTaiLai.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaiLai.ForeColor = System.Drawing.Color.White;
-            this.btnTaiLai.Location = new System.Drawing.Point(806, 196);
-            this.btnTaiLai.Margin = new System.Windows.Forms.Padding(0);
-            this.btnTaiLai.Name = "btnTaiLai";
-            this.btnTaiLai.Size = new System.Drawing.Size(105, 40);
-            this.btnTaiLai.TabIndex = 41;
-            this.btnTaiLai.TabStop = false;
-            this.btnTaiLai.Text = "Tải lại";
-            this.btnTaiLai.UseVisualStyleBackColor = false;
             // 
             // FormBillHistory
             // 

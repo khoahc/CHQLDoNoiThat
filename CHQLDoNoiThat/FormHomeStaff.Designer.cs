@@ -32,26 +32,28 @@ namespace CHQLDoNoiThat
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelMenu = new System.Windows.Forms.TableLayoutPanel();
+            this.btnLichSuHoaDon_FNhanVien = new System.Windows.Forms.Button();
+            this.btnKho_FNhanVien = new System.Windows.Forms.Button();
+            this.btnTaoHoaDon_FNhanVien = new System.Windows.Forms.Button();
+            this.lblTenDangNhap = new System.Windows.Forms.Label();
+            this.lblDangXuat = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelDesktop = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnClose = new System.Windows.Forms.Label();
             this.btnMaximize = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Label();
-            this.elipseControl1 = new ElipseToolDemo.ElipseControl();
-            this.elipseControl2 = new ElipseToolDemo.ElipseControl();
-            this.elipseControl3 = new ElipseToolDemo.ElipseControl();
-            this.btnLichSuHoaDon_FNhanVien = new System.Windows.Forms.Button();
-            this.btnKho_FNhanVien = new System.Windows.Forms.Button();
-            this.btnTaoHoaDon_FNhanVien = new System.Windows.Forms.Button();
-            this.lblTenDangNhap = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanelMenu.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanelDesktop.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -77,7 +79,7 @@ namespace CHQLDoNoiThat
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanelMenu, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblTenDangNhap, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label5, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lblDangXuat, 0, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
@@ -108,134 +110,6 @@ namespace CHQLDoNoiThat
             this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanelMenu.Size = new System.Drawing.Size(260, 640);
             this.tableLayoutPanelMenu.TabIndex = 0;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanelDesktop, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel6, 0, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(260, 0);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 95F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1040, 800);
-            this.tableLayoutPanel4.TabIndex = 1;
-            // 
-            // tableLayoutPanelDesktop
-            // 
-            this.tableLayoutPanelDesktop.ColumnCount = 2;
-            this.tableLayoutPanelDesktop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 97F));
-            this.tableLayoutPanelDesktop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3F));
-            this.tableLayoutPanelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelDesktop.Location = new System.Drawing.Point(0, 40);
-            this.tableLayoutPanelDesktop.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanelDesktop.Name = "tableLayoutPanelDesktop";
-            this.tableLayoutPanelDesktop.RowCount = 2;
-            this.tableLayoutPanelDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 96F));
-            this.tableLayoutPanelDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
-            this.tableLayoutPanelDesktop.Size = new System.Drawing.Size(1040, 760);
-            this.tableLayoutPanelDesktop.TabIndex = 0;
-            // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.ColumnCount = 2;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel6.Controls.Add(this.lblTitle, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.flowLayoutPanel1, 1, 0);
-            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 1;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(1040, 40);
-            this.tableLayoutPanel6.TabIndex = 1;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(0, 0);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(884, 40);
-            this.lblTitle.TabIndex = 23;
-            this.lblTitle.Text = "Home";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.btnClose);
-            this.flowLayoutPanel1.Controls.Add(this.btnMaximize);
-            this.flowLayoutPanel1.Controls.Add(this.btnMinimize);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(884, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(156, 40);
-            this.flowLayoutPanel1.TabIndex = 24;
-            // 
-            // btnClose
-            // 
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(118, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(35, 35);
-            this.btnClose.TabIndex = 23;
-            this.btnClose.Text = "X";
-            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnMaximize
-            // 
-            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximize.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMaximize.ForeColor = System.Drawing.Color.White;
-            this.btnMaximize.Location = new System.Drawing.Point(77, 0);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(35, 35);
-            this.btnMaximize.TabIndex = 22;
-            this.btnMaximize.Text = "O";
-            this.btnMaximize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimize.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinimize.ForeColor = System.Drawing.Color.White;
-            this.btnMinimize.Location = new System.Drawing.Point(36, 0);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(35, 35);
-            this.btnMinimize.TabIndex = 21;
-            this.btnMinimize.Text = "-";
-            this.btnMinimize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // elipseControl1
-            // 
-            this.elipseControl1.CornerRadius = 30;
-            this.elipseControl1.TargetControl = this.btnTaoHoaDon_FNhanVien;
-            // 
-            // elipseControl2
-            // 
-            this.elipseControl2.CornerRadius = 30;
-            this.elipseControl2.TargetControl = this.btnKho_FNhanVien;
-            // 
-            // elipseControl3
-            // 
-            this.elipseControl3.CornerRadius = 30;
-            this.elipseControl3.TargetControl = this.btnLichSuHoaDon_FNhanVien;
             // 
             // btnLichSuHoaDon_FNhanVien
             // 
@@ -315,23 +189,171 @@ namespace CHQLDoNoiThat
             this.lblTenDangNhap.TabIndex = 0;
             this.lblTenDangNhap.Text = "    tendangnhap";
             this.lblTenDangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTenDangNhap.Click += new System.EventHandler(this.lblTenDangNhap_Click);
             // 
-            // label5
+            // lblDangXuat
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Image = global::CHQLDoNoiThat.Properties.Resources.logout_rounded_left_30px;
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5.Location = new System.Drawing.Point(3, 741);
-            this.label5.Name = "label5";
-            this.label5.Padding = new System.Windows.Forms.Padding(11, 0, 0, 5);
-            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label5.Size = new System.Drawing.Size(188, 38);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "     Đăng xuất";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label5.UseCompatibleTextRendering = true;
+            this.lblDangXuat.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblDangXuat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDangXuat.ForeColor = System.Drawing.Color.White;
+            this.lblDangXuat.Image = global::CHQLDoNoiThat.Properties.Resources.logout_rounded_left_30px;
+            this.lblDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDangXuat.Location = new System.Drawing.Point(3, 741);
+            this.lblDangXuat.Name = "lblDangXuat";
+            this.lblDangXuat.Padding = new System.Windows.Forms.Padding(11, 0, 0, 5);
+            this.lblDangXuat.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblDangXuat.Size = new System.Drawing.Size(188, 38);
+            this.lblDangXuat.TabIndex = 16;
+            this.lblDangXuat.Text = "     Đăng xuất";
+            this.lblDangXuat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDangXuat.UseCompatibleTextRendering = true;
+            this.lblDangXuat.Click += new System.EventHandler(this.lblDangXuat_Click);
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanelDesktop, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel6, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(260, 0);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 95F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1040, 800);
+            this.tableLayoutPanel4.TabIndex = 1;
+            // 
+            // tableLayoutPanelDesktop
+            // 
+            this.tableLayoutPanelDesktop.ColumnCount = 2;
+            this.tableLayoutPanelDesktop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 97F));
+            this.tableLayoutPanelDesktop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.tableLayoutPanelDesktop.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelDesktop.Location = new System.Drawing.Point(0, 40);
+            this.tableLayoutPanelDesktop.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanelDesktop.Name = "tableLayoutPanelDesktop";
+            this.tableLayoutPanelDesktop.RowCount = 2;
+            this.tableLayoutPanelDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 96F));
+            this.tableLayoutPanelDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
+            this.tableLayoutPanelDesktop.Size = new System.Drawing.Size(1040, 760);
+            this.tableLayoutPanelDesktop.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1002, 723);
+            this.panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(153, 327);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(689, 51);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Chúc bạn một ngày làm việc hiệu quả";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Image = global::CHQLDoNoiThat.Properties.Resources.wink_100px;
+            this.label1.Location = new System.Drawing.Point(315, 175);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(346, 152);
+            this.label1.TabIndex = 0;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 2;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel6.Controls.Add(this.lblTitle, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.flowLayoutPanel1, 1, 0);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 1;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1040, 40);
+            this.tableLayoutPanel6.TabIndex = 1;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.lblTitle.Size = new System.Drawing.Size(884, 40);
+            this.lblTitle.TabIndex = 23;
+            this.lblTitle.Text = "Home";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.btnClose);
+            this.flowLayoutPanel1.Controls.Add(this.btnMaximize);
+            this.flowLayoutPanel1.Controls.Add(this.btnMinimize);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(884, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(156, 40);
+            this.flowLayoutPanel1.TabIndex = 24;
+            // 
+            // btnClose
+            // 
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(118, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(35, 35);
+            this.btnClose.TabIndex = 23;
+            this.btnClose.Text = "X";
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnMaximize
+            // 
+            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaximize.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaximize.ForeColor = System.Drawing.Color.White;
+            this.btnMaximize.Location = new System.Drawing.Point(77, 0);
+            this.btnMaximize.Name = "btnMaximize";
+            this.btnMaximize.Size = new System.Drawing.Size(35, 35);
+            this.btnMaximize.TabIndex = 22;
+            this.btnMaximize.Text = "O";
+            this.btnMaximize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimize.ForeColor = System.Drawing.Color.White;
+            this.btnMinimize.Location = new System.Drawing.Point(36, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(35, 35);
+            this.btnMinimize.TabIndex = 21;
+            this.btnMinimize.Text = "-";
+            this.btnMinimize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // FormHomeStaff
             // 
@@ -350,6 +372,9 @@ namespace CHQLDoNoiThat
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanelMenu.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanelDesktop.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -361,7 +386,7 @@ namespace CHQLDoNoiThat
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label lblTenDangNhap;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblDangXuat;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelDesktop;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
@@ -370,12 +395,12 @@ namespace CHQLDoNoiThat
         private System.Windows.Forms.Label btnMinimize;
         private System.Windows.Forms.Label btnMaximize;
         private System.Windows.Forms.Label btnClose;
-        private ElipseToolDemo.ElipseControl elipseControl1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelMenu;
         private System.Windows.Forms.Button btnLichSuHoaDon_FNhanVien;
         private System.Windows.Forms.Button btnKho_FNhanVien;
         private System.Windows.Forms.Button btnTaoHoaDon_FNhanVien;
-        private ElipseToolDemo.ElipseControl elipseControl2;
-        private ElipseToolDemo.ElipseControl elipseControl3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

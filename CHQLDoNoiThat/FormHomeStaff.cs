@@ -14,6 +14,7 @@ namespace CHQLDoNoiThat
     {
         private Button currentButton;
         private Form activeForm;
+        private LoginForm formLogin;
 
         public FormHomeStaff()
         {
@@ -22,9 +23,10 @@ namespace CHQLDoNoiThat
 
         private void OpenChildForm(Form childForm, object btnSender)
         {
+            panel1.Dispose();
             if (activeForm != null)
             {
-                activeForm.Close();
+                activeForm.Close();                
             }
             activeForm = childForm;
             childForm.TopLevel = false;
@@ -102,5 +104,18 @@ namespace CHQLDoNoiThat
             OpenChildForm(new FormsStaff.FormBillHistory(), sender);
 
         }
+
+        private void lblTenDangNhap_Click(object sender, EventArgs e)
+        {
+            DisableButton();
+            OpenChildForm(new FormAccount(), sender);
+        }
+        private void lblDangXuat_Click(object sender, EventArgs e)
+        {
+            formLogin = new LoginForm();
+            formLogin.Show();
+            this.Hide();
+        }
+
     }
 }

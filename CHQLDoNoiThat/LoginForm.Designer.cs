@@ -156,6 +156,7 @@ namespace CHQLDoNoiThat
             this.btnLogin.TabStop = false;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label4
             // 

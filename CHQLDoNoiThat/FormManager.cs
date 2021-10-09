@@ -14,6 +14,7 @@ namespace CHQLDoNoiThat
     {
         private Button currentButton;
         private Form activeForm;
+        private LoginForm formLogin;
 
         public FormManager()
         {
@@ -22,6 +23,7 @@ namespace CHQLDoNoiThat
 
         private void OpenChildForm(Form childForm, object btnSender)
         {
+            panel1.Dispose();
             if (activeForm != null)
             {
                 activeForm.Close();
@@ -108,7 +110,7 @@ namespace CHQLDoNoiThat
             OpenChildForm(new FormsManager.FormProduct(), sender);
         }
 
-        private void btnTaoHoaDon_TManager_Click(object sender, EventArgs e)
+        private void btnTaoHoaDon_FManager_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
             OpenChildForm(new FormsManager.FormBill(), sender);
@@ -120,9 +122,23 @@ namespace CHQLDoNoiThat
             OpenChildForm(new FormsManager.FormBillHistory(), sender);
         }
 
-        private void tableLayoutPanelDesktop_Paint(object sender, PaintEventArgs e)
+        private void btnThongKe_FManager_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender);
+            OpenChildForm(new FormsManager.FormStatistic(), sender);
+        }
 
+        private void lblDangXuat_Click(object sender, EventArgs e)
+        {
+            formLogin = new LoginForm();
+            formLogin.Show();
+            this.Hide();
+        }
+
+        private void lblTenDangNhap_Click(object sender, EventArgs e)
+        {
+            DisableButton();
+            OpenChildForm(new FormAccount(), sender);
         }
     }
 }

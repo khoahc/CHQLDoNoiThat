@@ -16,5 +16,15 @@ namespace CHQLDoNoiThat.FormsManager
         {
             InitializeComponent();
         }
+
+        private void btnTaiAnhDaiDien_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files(*.jpeg;*.bmp;*.png;*.jpg)|*.jpeg;*.bmp;*.png;*.jpg";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                pictureBoxNhanVien.Image = new Bitmap(open.FileName);
+            }
+        }
     }
 }

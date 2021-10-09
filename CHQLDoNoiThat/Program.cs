@@ -16,7 +16,7 @@ namespace CHQLDoNoiThat
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());      
+            Application.Run(new LoginForm());
             Application.Run(new FormHomeStaff());
             Application.Run(new FormManager());
         }

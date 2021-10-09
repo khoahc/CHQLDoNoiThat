@@ -61,11 +61,29 @@
     <Compile Include="CustomControls\ElipseControl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="FormAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAccount.Designer.cs">
+      <DependentUpon>FormAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangePassword.Designer.cs">
+      <DependentUpon>FormChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHomeStaff.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormHomeStaff.Designer.cs">
       <DependentUpon>FormHomeStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfo.Designer.cs">
+      <DependentUpon>FormInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="FormManager.cs">
       <SubType>Form</SubType>
@@ -109,6 +127,12 @@
     <Compile Include="FormsManager\FormStaff.Designer.cs">
       <DependentUpon>FormStaff.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsManager\FormStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsManager\FormStatistic.Designer.cs">
+      <DependentUpon>FormStatistic.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsStaff\FormBill.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,8 +162,17 @@
     <EmbeddedResource Include="CustomControls\TextBoxControl.resx">
       <DependentUpon>TextBoxControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAccount.resx">
+      <DependentUpon>FormAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChangePassword.resx">
+      <DependentUpon>FormChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHomeStaff.resx">
       <DependentUpon>FormHomeStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInfo.resx">
+      <DependentUpon>FormInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormManager.resx">
       <DependentUpon>FormManager.cs</DependentUpon>
@@ -161,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsManager\FormStaff.resx">
       <DependentUpon>FormStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsManager\FormStatistic.resx">
+      <DependentUpon>FormStatistic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsStaff\FormBill.resx">
       <DependentUpon>FormBill.cs</DependentUpon>
@@ -229,6 +265,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logout_rounded_left_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crown_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wink_100px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

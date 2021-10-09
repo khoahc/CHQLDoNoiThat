@@ -8,27 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CHQLDoNoiThat.FormsManager
+namespace CHQLDoNoiThat
 {
-    public partial class FormProduct : Form
+    public partial class FormInfo : Form
     {
-        public FormProduct()
+        public FormInfo()
         {
             InitializeComponent();
         }
 
-        private void btnXoa_LoaiSanPham_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnTaiAnhSanPham_Click(object sender, EventArgs e)
+        private void btnTaiAnhDaiDien_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
             open.Filter = "Image Files(*.jpeg;*.bmp;*.png;*.jpg)|*.jpeg;*.bmp;*.png;*.jpg";
             if (open.ShowDialog() == DialogResult.OK)
             {
-                pictureBoxSanPham.Image = new Bitmap(open.FileName);
+                pictureBoxNhanVien.Image = new Bitmap(open.FileName);
             }
         }
     }

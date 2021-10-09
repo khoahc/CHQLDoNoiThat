@@ -12,6 +12,8 @@ namespace CHQLDoNoiThat
 {
     public partial class LoginForm : Form
     {
+        private FormHomeStaff formHomeStaff;
+
         public LoginForm()
         {
             InitializeComponent();
@@ -35,6 +37,14 @@ namespace CHQLDoNoiThat
         private void Close_MouseLeave(object sender, EventArgs e)
         {
             btnClose.ForeColor = System.Drawing.Color.White;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            
+            formHomeStaff = new FormHomeStaff();
+            formHomeStaff.Show();
+            this.Hide();
         }
     }
 }
