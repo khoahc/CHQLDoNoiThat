@@ -32,19 +32,21 @@ namespace CHQLDoNoiThat.FormsManager
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.dataGridViewChiTietHoaDon = new System.Windows.Forms.DataGridView();
+            this.dataGridViewLoaiSanPham = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtIdLoaiSanPham = new CHQLDoNoiThat.CustomControls.TextBoxControl();
-            this.lblIdLoaiSanPham = new System.Windows.Forms.Label();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnTaiLai = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTenLoaiSanPham = new CHQLDoNoiThat.CustomControls.TextBoxControl();
-            this.btnThem_LoaiSanPham = new System.Windows.Forms.Button();
-            this.btnSua_LoaiSanPham = new System.Windows.Forms.Button();
-            this.btnXoa_LoaiSanPham = new System.Windows.Forms.Button();
+            this.lblIdLoaiSanPham = new System.Windows.Forms.Label();
+            this.txtIdLoaiSanPham = new CHQLDoNoiThat.CustomControls.TextBoxControl();
             this.elipseControl1 = new ElipseToolDemo.ElipseControl();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewChiTietHoaDon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLoaiSanPham)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +69,7 @@ namespace CHQLDoNoiThat.FormsManager
             // panel12
             // 
             this.panel12.Controls.Add(this.label11);
-            this.panel12.Controls.Add(this.dataGridViewChiTietHoaDon);
+            this.panel12.Controls.Add(this.dataGridViewLoaiSanPham);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel12.Location = new System.Drawing.Point(523, 3);
             this.panel12.Name = "panel12";
@@ -80,30 +82,32 @@ namespace CHQLDoNoiThat.FormsManager
             this.label11.ForeColor = System.Drawing.Color.SteelBlue;
             this.label11.Location = new System.Drawing.Point(15, 30);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(481, 28);
+            this.label11.Size = new System.Drawing.Size(481, 50);
             this.label11.TabIndex = 22;
             this.label11.Text = "Danh sách loại sản phẩm";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // dataGridViewChiTietHoaDon
+            // dataGridViewLoaiSanPham
             // 
-            this.dataGridViewChiTietHoaDon.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewChiTietHoaDon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewChiTietHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewChiTietHoaDon.Location = new System.Drawing.Point(12, 83);
-            this.dataGridViewChiTietHoaDon.Name = "dataGridViewChiTietHoaDon";
-            this.dataGridViewChiTietHoaDon.RowHeadersWidth = 51;
-            this.dataGridViewChiTietHoaDon.RowTemplate.Height = 24;
-            this.dataGridViewChiTietHoaDon.Size = new System.Drawing.Size(484, 620);
-            this.dataGridViewChiTietHoaDon.TabIndex = 21;
+            this.dataGridViewLoaiSanPham.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewLoaiSanPham.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewLoaiSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewLoaiSanPham.Location = new System.Drawing.Point(12, 83);
+            this.dataGridViewLoaiSanPham.Name = "dataGridViewLoaiSanPham";
+            this.dataGridViewLoaiSanPham.RowHeadersWidth = 51;
+            this.dataGridViewLoaiSanPham.RowTemplate.Height = 24;
+            this.dataGridViewLoaiSanPham.Size = new System.Drawing.Size(484, 620);
+            this.dataGridViewLoaiSanPham.TabIndex = 21;
             // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.btnXoa_LoaiSanPham);
-            this.panel3.Controls.Add(this.btnSua_LoaiSanPham);
-            this.panel3.Controls.Add(this.btnThem_LoaiSanPham);
+            this.panel3.Controls.Add(this.btnLuu);
+            this.panel3.Controls.Add(this.btnTaiLai);
+            this.panel3.Controls.Add(this.btnXoa);
+            this.panel3.Controls.Add(this.btnSua);
+            this.panel3.Controls.Add(this.btnThem);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.txtTenLoaiSanPham);
             this.panel3.Controls.Add(this.lblIdLoaiSanPham);
@@ -114,31 +118,91 @@ namespace CHQLDoNoiThat.FormsManager
             this.panel3.Size = new System.Drawing.Size(510, 376);
             this.panel3.TabIndex = 5;
             // 
-            // txtIdLoaiSanPham
+            // btnLuu
             // 
-            this.txtIdLoaiSanPham.BorderColor = System.Drawing.Color.SteelBlue;
-            this.txtIdLoaiSanPham.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtIdLoaiSanPham.BorderSize = 2;
-            this.txtIdLoaiSanPham.Location = new System.Drawing.Point(228, 49);
-            this.txtIdLoaiSanPham.Multiline = false;
-            this.txtIdLoaiSanPham.Name = "txtIdLoaiSanPham";
-            this.txtIdLoaiSanPham.Padding = new System.Windows.Forms.Padding(7);
-            this.txtIdLoaiSanPham.PasswordChar = false;
-            this.txtIdLoaiSanPham.Size = new System.Drawing.Size(250, 32);
-            this.txtIdLoaiSanPham.TabIndex = 0;
-            this.txtIdLoaiSanPham.Texts = "";
-            this.txtIdLoaiSanPham.UnderlinedStyle = true;
+            this.btnLuu.AutoSize = true;
+            this.btnLuu.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnLuu.FlatAppearance.BorderSize = 0;
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.Location = new System.Drawing.Point(111, 314);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(0);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(105, 40);
+            this.btnLuu.TabIndex = 43;
+            this.btnLuu.TabStop = false;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = false;
             // 
-            // lblIdLoaiSanPham
+            // btnTaiLai
             // 
-            this.lblIdLoaiSanPham.AutoSize = true;
-            this.lblIdLoaiSanPham.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdLoaiSanPham.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblIdLoaiSanPham.Location = new System.Drawing.Point(23, 53);
-            this.lblIdLoaiSanPham.Name = "lblIdLoaiSanPham";
-            this.lblIdLoaiSanPham.Size = new System.Drawing.Size(163, 28);
-            this.lblIdLoaiSanPham.TabIndex = 8;
-            this.lblIdLoaiSanPham.Text = "Id loại sản phẩm";
+            this.btnTaiLai.AutoSize = true;
+            this.btnTaiLai.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnTaiLai.FlatAppearance.BorderSize = 0;
+            this.btnTaiLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaiLai.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiLai.ForeColor = System.Drawing.Color.White;
+            this.btnTaiLai.Location = new System.Drawing.Point(259, 314);
+            this.btnTaiLai.Margin = new System.Windows.Forms.Padding(0);
+            this.btnTaiLai.Name = "btnTaiLai";
+            this.btnTaiLai.Size = new System.Drawing.Size(120, 40);
+            this.btnTaiLai.TabIndex = 42;
+            this.btnTaiLai.TabStop = false;
+            this.btnTaiLai.Text = "Tải lại";
+            this.btnTaiLai.UseVisualStyleBackColor = false;
+            this.btnTaiLai.Click += new System.EventHandler(this.btnTaiLai_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.AutoSize = true;
+            this.btnXoa.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnXoa.FlatAppearance.BorderSize = 0;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Location = new System.Drawing.Point(338, 246);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(0);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(120, 40);
+            this.btnXoa.TabIndex = 21;
+            this.btnXoa.TabStop = false;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            // 
+            // btnSua
+            // 
+            this.btnSua.AutoSize = true;
+            this.btnSua.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnSua.FlatAppearance.BorderSize = 0;
+            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSua.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.ForeColor = System.Drawing.Color.White;
+            this.btnSua.Location = new System.Drawing.Point(184, 246);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(120, 40);
+            this.btnSua.TabIndex = 20;
+            this.btnSua.TabStop = false;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = false;
+            // 
+            // btnThem
+            // 
+            this.btnThem.AutoSize = true;
+            this.btnThem.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnThem.FlatAppearance.BorderSize = 0;
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Location = new System.Drawing.Point(28, 246);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(0);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(120, 40);
+            this.btnThem.TabIndex = 19;
+            this.btnThem.TabStop = false;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -156,66 +220,45 @@ namespace CHQLDoNoiThat.FormsManager
             this.txtTenLoaiSanPham.BorderColor = System.Drawing.Color.SteelBlue;
             this.txtTenLoaiSanPham.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtTenLoaiSanPham.BorderSize = 2;
+            this.txtTenLoaiSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenLoaiSanPham.ForeColor = System.Drawing.Color.SteelBlue;
             this.txtTenLoaiSanPham.Location = new System.Drawing.Point(228, 149);
             this.txtTenLoaiSanPham.Multiline = false;
             this.txtTenLoaiSanPham.Name = "txtTenLoaiSanPham";
             this.txtTenLoaiSanPham.Padding = new System.Windows.Forms.Padding(7);
             this.txtTenLoaiSanPham.PasswordChar = false;
-            this.txtTenLoaiSanPham.Size = new System.Drawing.Size(250, 32);
+            this.txtTenLoaiSanPham.Size = new System.Drawing.Size(250, 39);
             this.txtTenLoaiSanPham.TabIndex = 9;
             this.txtTenLoaiSanPham.Texts = "";
             this.txtTenLoaiSanPham.UnderlinedStyle = true;
             // 
-            // btnThem_LoaiSanPham
+            // lblIdLoaiSanPham
             // 
-            this.btnThem_LoaiSanPham.AutoSize = true;
-            this.btnThem_LoaiSanPham.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnThem_LoaiSanPham.FlatAppearance.BorderSize = 0;
-            this.btnThem_LoaiSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem_LoaiSanPham.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem_LoaiSanPham.ForeColor = System.Drawing.Color.White;
-            this.btnThem_LoaiSanPham.Location = new System.Drawing.Point(28, 246);
-            this.btnThem_LoaiSanPham.Margin = new System.Windows.Forms.Padding(0);
-            this.btnThem_LoaiSanPham.Name = "btnThem_LoaiSanPham";
-            this.btnThem_LoaiSanPham.Size = new System.Drawing.Size(120, 40);
-            this.btnThem_LoaiSanPham.TabIndex = 19;
-            this.btnThem_LoaiSanPham.TabStop = false;
-            this.btnThem_LoaiSanPham.Text = "Thêm";
-            this.btnThem_LoaiSanPham.UseVisualStyleBackColor = false;
+            this.lblIdLoaiSanPham.AutoSize = true;
+            this.lblIdLoaiSanPham.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdLoaiSanPham.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lblIdLoaiSanPham.Location = new System.Drawing.Point(23, 53);
+            this.lblIdLoaiSanPham.Name = "lblIdLoaiSanPham";
+            this.lblIdLoaiSanPham.Size = new System.Drawing.Size(163, 28);
+            this.lblIdLoaiSanPham.TabIndex = 8;
+            this.lblIdLoaiSanPham.Text = "Id loại sản phẩm";
             // 
-            // btnSua_LoaiSanPham
+            // txtIdLoaiSanPham
             // 
-            this.btnSua_LoaiSanPham.AutoSize = true;
-            this.btnSua_LoaiSanPham.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnSua_LoaiSanPham.FlatAppearance.BorderSize = 0;
-            this.btnSua_LoaiSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua_LoaiSanPham.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua_LoaiSanPham.ForeColor = System.Drawing.Color.White;
-            this.btnSua_LoaiSanPham.Location = new System.Drawing.Point(184, 246);
-            this.btnSua_LoaiSanPham.Margin = new System.Windows.Forms.Padding(0);
-            this.btnSua_LoaiSanPham.Name = "btnSua_LoaiSanPham";
-            this.btnSua_LoaiSanPham.Size = new System.Drawing.Size(120, 40);
-            this.btnSua_LoaiSanPham.TabIndex = 20;
-            this.btnSua_LoaiSanPham.TabStop = false;
-            this.btnSua_LoaiSanPham.Text = "Sửa";
-            this.btnSua_LoaiSanPham.UseVisualStyleBackColor = false;
-            // 
-            // btnXoa_LoaiSanPham
-            // 
-            this.btnXoa_LoaiSanPham.AutoSize = true;
-            this.btnXoa_LoaiSanPham.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnXoa_LoaiSanPham.FlatAppearance.BorderSize = 0;
-            this.btnXoa_LoaiSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa_LoaiSanPham.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa_LoaiSanPham.ForeColor = System.Drawing.Color.White;
-            this.btnXoa_LoaiSanPham.Location = new System.Drawing.Point(338, 246);
-            this.btnXoa_LoaiSanPham.Margin = new System.Windows.Forms.Padding(0);
-            this.btnXoa_LoaiSanPham.Name = "btnXoa_LoaiSanPham";
-            this.btnXoa_LoaiSanPham.Size = new System.Drawing.Size(120, 40);
-            this.btnXoa_LoaiSanPham.TabIndex = 21;
-            this.btnXoa_LoaiSanPham.TabStop = false;
-            this.btnXoa_LoaiSanPham.Text = "Xóa";
-            this.btnXoa_LoaiSanPham.UseVisualStyleBackColor = false;
+            this.txtIdLoaiSanPham.BorderColor = System.Drawing.Color.SteelBlue;
+            this.txtIdLoaiSanPham.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtIdLoaiSanPham.BorderSize = 2;
+            this.txtIdLoaiSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdLoaiSanPham.ForeColor = System.Drawing.Color.SteelBlue;
+            this.txtIdLoaiSanPham.Location = new System.Drawing.Point(228, 49);
+            this.txtIdLoaiSanPham.Multiline = false;
+            this.txtIdLoaiSanPham.Name = "txtIdLoaiSanPham";
+            this.txtIdLoaiSanPham.Padding = new System.Windows.Forms.Padding(7);
+            this.txtIdLoaiSanPham.PasswordChar = false;
+            this.txtIdLoaiSanPham.Size = new System.Drawing.Size(250, 39);
+            this.txtIdLoaiSanPham.TabIndex = 0;
+            this.txtIdLoaiSanPham.Texts = "";
+            this.txtIdLoaiSanPham.UnderlinedStyle = true;
             // 
             // elipseControl1
             // 
@@ -235,7 +278,7 @@ namespace CHQLDoNoiThat.FormsManager
             this.Text = "Loại sản phẩm";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewChiTietHoaDon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLoaiSanPham)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -247,14 +290,16 @@ namespace CHQLDoNoiThat.FormsManager
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DataGridView dataGridViewChiTietHoaDon;
+        private System.Windows.Forms.DataGridView dataGridViewLoaiSanPham;
         private CustomControls.TextBoxControl txtIdLoaiSanPham;
         private System.Windows.Forms.Label lblIdLoaiSanPham;
         private System.Windows.Forms.Label label1;
         private CustomControls.TextBoxControl txtTenLoaiSanPham;
-        private System.Windows.Forms.Button btnXoa_LoaiSanPham;
-        private System.Windows.Forms.Button btnSua_LoaiSanPham;
-        private System.Windows.Forms.Button btnThem_LoaiSanPham;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnThem;
         private ElipseToolDemo.ElipseControl elipseControl1;
+        private System.Windows.Forms.Button btnTaiLai;
+        private System.Windows.Forms.Button btnLuu;
     }
 }

@@ -32,26 +32,27 @@ namespace CHQLDoNoiThat.FormsStaff
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnThemSanPham_TaoHoaDon = new System.Windows.Forms.Button();
+            this.btnThemSanPham = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtDonGia = new System.Windows.Forms.TextBox();
-            this.btnTaiLai_TaoHoaDon = new System.Windows.Forms.Button();
+            this.btnTaiLai = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtTenSanPham = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cmbLoaiSpanPham = new CHQLDoNoiThat.ComboBoxControl();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cmbLoaiSanPham = new CHQLDoNoiThat.ComboBoxControl();
+            this.dataGridViewSanPham = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.btnIn_TaoHoaDon = new System.Windows.Forms.Button();
-            this.labTongTien_TaoHoaDon = new System.Windows.Forms.Label();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnThanhToan = new System.Windows.Forms.Button();
+            this.lblTongTien = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.dataGridViewChiTietHoaDon = new System.Windows.Forms.DataGridView();
             this.elipseControl2 = new ElipseToolDemo.ElipseControl();
@@ -62,7 +63,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.tableLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSanPham)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewChiTietHoaDon)).BeginInit();
@@ -107,17 +108,17 @@ namespace CHQLDoNoiThat.FormsStaff
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.AutoSize = true;
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.btnThemSanPham_TaoHoaDon);
+            this.panel3.Controls.Add(this.btnThemSanPham);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.txtSoLuong);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.txtDonGia);
-            this.panel3.Controls.Add(this.btnTaiLai_TaoHoaDon);
+            this.panel3.Controls.Add(this.btnTaiLai);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Controls.Add(this.txtUser);
+            this.panel3.Controls.Add(this.txtTenSanPham);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Location = new System.Drawing.Point(5, 5);
             this.panel3.Margin = new System.Windows.Forms.Padding(5);
@@ -126,23 +127,23 @@ namespace CHQLDoNoiThat.FormsStaff
             this.panel3.TabIndex = 4;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // btnThemSanPham_TaoHoaDon
+            // btnThemSanPham
             // 
-            this.btnThemSanPham_TaoHoaDon.AutoSize = true;
-            this.btnThemSanPham_TaoHoaDon.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnThemSanPham_TaoHoaDon.FlatAppearance.BorderSize = 0;
-            this.btnThemSanPham_TaoHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemSanPham_TaoHoaDon.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemSanPham_TaoHoaDon.ForeColor = System.Drawing.Color.White;
-            this.btnThemSanPham_TaoHoaDon.Location = new System.Drawing.Point(14, 244);
-            this.btnThemSanPham_TaoHoaDon.Margin = new System.Windows.Forms.Padding(0);
-            this.btnThemSanPham_TaoHoaDon.Name = "btnThemSanPham_TaoHoaDon";
-            this.btnThemSanPham_TaoHoaDon.Size = new System.Drawing.Size(200, 40);
-            this.btnThemSanPham_TaoHoaDon.TabIndex = 17;
-            this.btnThemSanPham_TaoHoaDon.TabStop = false;
-            this.btnThemSanPham_TaoHoaDon.Text = "Thêm vào hóa đơn";
-            this.btnThemSanPham_TaoHoaDon.UseVisualStyleBackColor = false;
-            this.btnThemSanPham_TaoHoaDon.Click += new System.EventHandler(this.btnThemSanPham_TaoHoaDon_Click);
+            this.btnThemSanPham.AutoSize = true;
+            this.btnThemSanPham.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnThemSanPham.FlatAppearance.BorderSize = 0;
+            this.btnThemSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemSanPham.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemSanPham.ForeColor = System.Drawing.Color.White;
+            this.btnThemSanPham.Location = new System.Drawing.Point(14, 244);
+            this.btnThemSanPham.Margin = new System.Windows.Forms.Padding(0);
+            this.btnThemSanPham.Name = "btnThemSanPham";
+            this.btnThemSanPham.Size = new System.Drawing.Size(200, 40);
+            this.btnThemSanPham.TabIndex = 17;
+            this.btnThemSanPham.TabStop = false;
+            this.btnThemSanPham.Text = "Thêm vào hóa đơn";
+            this.btnThemSanPham.UseVisualStyleBackColor = false;
+            this.btnThemSanPham.Click += new System.EventHandler(this.btnThemSanPham_TaoHoaDon_Click);
             // 
             // panel6
             // 
@@ -196,23 +197,23 @@ namespace CHQLDoNoiThat.FormsStaff
             this.txtDonGia.TabIndex = 12;
             this.txtDonGia.TextChanged += new System.EventHandler(this.txtDonGia_TextChanged);
             // 
-            // btnTaiLai_TaoHoaDon
+            // btnTaiLai
             // 
-            this.btnTaiLai_TaoHoaDon.AutoSize = true;
-            this.btnTaiLai_TaoHoaDon.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnTaiLai_TaoHoaDon.FlatAppearance.BorderSize = 0;
-            this.btnTaiLai_TaoHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTaiLai_TaoHoaDon.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaiLai_TaoHoaDon.ForeColor = System.Drawing.Color.White;
-            this.btnTaiLai_TaoHoaDon.Location = new System.Drawing.Point(262, 244);
-            this.btnTaiLai_TaoHoaDon.Margin = new System.Windows.Forms.Padding(0);
-            this.btnTaiLai_TaoHoaDon.Name = "btnTaiLai_TaoHoaDon";
-            this.btnTaiLai_TaoHoaDon.Size = new System.Drawing.Size(120, 40);
-            this.btnTaiLai_TaoHoaDon.TabIndex = 18;
-            this.btnTaiLai_TaoHoaDon.TabStop = false;
-            this.btnTaiLai_TaoHoaDon.Text = "Tải lại";
-            this.btnTaiLai_TaoHoaDon.UseVisualStyleBackColor = false;
-            this.btnTaiLai_TaoHoaDon.Click += new System.EventHandler(this.btnTaiLai_TaoHoaDon_Click);
+            this.btnTaiLai.AutoSize = true;
+            this.btnTaiLai.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnTaiLai.FlatAppearance.BorderSize = 0;
+            this.btnTaiLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaiLai.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiLai.ForeColor = System.Drawing.Color.White;
+            this.btnTaiLai.Location = new System.Drawing.Point(262, 244);
+            this.btnTaiLai.Margin = new System.Windows.Forms.Padding(0);
+            this.btnTaiLai.Name = "btnTaiLai";
+            this.btnTaiLai.Size = new System.Drawing.Size(120, 40);
+            this.btnTaiLai.TabIndex = 18;
+            this.btnTaiLai.TabStop = false;
+            this.btnTaiLai.Text = "Tải lại";
+            this.btnTaiLai.UseVisualStyleBackColor = false;
+            this.btnTaiLai.Click += new System.EventHandler(this.btnTaiLai_TaoHoaDon_Click);
             // 
             // label6
             // 
@@ -247,16 +248,16 @@ namespace CHQLDoNoiThat.FormsStaff
             this.panel4.TabIndex = 9;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // txtUser
+            // txtTenSanPham
             // 
-            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.ForeColor = System.Drawing.Color.SteelBlue;
-            this.txtUser.Location = new System.Drawing.Point(153, 60);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(230, 25);
-            this.txtUser.TabIndex = 8;
-            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
+            this.txtTenSanPham.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTenSanPham.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenSanPham.ForeColor = System.Drawing.Color.SteelBlue;
+            this.txtTenSanPham.Location = new System.Drawing.Point(153, 60);
+            this.txtTenSanPham.Name = "txtTenSanPham";
+            this.txtTenSanPham.Size = new System.Drawing.Size(230, 25);
+            this.txtTenSanPham.TabIndex = 8;
+            this.txtTenSanPham.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             // 
             // label10
             // 
@@ -272,8 +273,8 @@ namespace CHQLDoNoiThat.FormsStaff
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.cmbLoaiSpanPham);
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.cmbLoaiSanPham);
+            this.panel1.Controls.Add(this.dataGridViewSanPham);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(418, 5);
@@ -283,41 +284,41 @@ namespace CHQLDoNoiThat.FormsStaff
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // cmbLoaiSpanPham
+            // cmbLoaiSanPham
             // 
-            this.cmbLoaiSpanPham.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.cmbLoaiSpanPham.BackColor = System.Drawing.Color.White;
-            this.cmbLoaiSpanPham.BorderColor = System.Drawing.Color.SteelBlue;
-            this.cmbLoaiSpanPham.BorderSize = 1;
-            this.cmbLoaiSpanPham.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cmbLoaiSpanPham.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbLoaiSpanPham.ForeColor = System.Drawing.Color.SteelBlue;
-            this.cmbLoaiSpanPham.IconColor = System.Drawing.Color.SteelBlue;
-            this.cmbLoaiSpanPham.ListBackColor = System.Drawing.Color.SteelBlue;
-            this.cmbLoaiSpanPham.ListTextColor = System.Drawing.Color.White;
-            this.cmbLoaiSpanPham.Location = new System.Drawing.Point(3, 3);
-            this.cmbLoaiSpanPham.Margin = new System.Windows.Forms.Padding(0);
-            this.cmbLoaiSpanPham.MinimumSize = new System.Drawing.Size(241, 39);
-            this.cmbLoaiSpanPham.Name = "cmbLoaiSpanPham";
-            this.cmbLoaiSpanPham.Padding = new System.Windows.Forms.Padding(1);
-            this.cmbLoaiSpanPham.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmbLoaiSpanPham.Size = new System.Drawing.Size(241, 39);
-            this.cmbLoaiSpanPham.TabIndex = 0;
-            this.cmbLoaiSpanPham.Texts = "Loại sản phẩm";
-            this.cmbLoaiSpanPham.Load += new System.EventHandler(this.cmbLoaiSpanPham_Load);
+            this.cmbLoaiSanPham.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.cmbLoaiSanPham.BackColor = System.Drawing.Color.White;
+            this.cmbLoaiSanPham.BorderColor = System.Drawing.Color.SteelBlue;
+            this.cmbLoaiSanPham.BorderSize = 1;
+            this.cmbLoaiSanPham.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cmbLoaiSanPham.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbLoaiSanPham.ForeColor = System.Drawing.Color.SteelBlue;
+            this.cmbLoaiSanPham.IconColor = System.Drawing.Color.SteelBlue;
+            this.cmbLoaiSanPham.ListBackColor = System.Drawing.Color.White;
+            this.cmbLoaiSanPham.ListTextColor = System.Drawing.Color.SteelBlue;
+            this.cmbLoaiSanPham.Location = new System.Drawing.Point(3, 3);
+            this.cmbLoaiSanPham.Margin = new System.Windows.Forms.Padding(0);
+            this.cmbLoaiSanPham.MinimumSize = new System.Drawing.Size(241, 39);
+            this.cmbLoaiSanPham.Name = "cmbLoaiSanPham";
+            this.cmbLoaiSanPham.Padding = new System.Windows.Forms.Padding(1);
+            this.cmbLoaiSanPham.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmbLoaiSanPham.Size = new System.Drawing.Size(241, 39);
+            this.cmbLoaiSanPham.TabIndex = 0;
+            this.cmbLoaiSanPham.Texts = "Loại sản phẩm";
+            this.cmbLoaiSanPham.Load += new System.EventHandler(this.cmbLoaiSpanPham_Load);
             // 
-            // dataGridView1
+            // dataGridViewSanPham
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 51);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(604, 272);
-            this.dataGridView1.TabIndex = 22;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridViewSanPham.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewSanPham.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSanPham.Location = new System.Drawing.Point(3, 51);
+            this.dataGridViewSanPham.Name = "dataGridViewSanPham";
+            this.dataGridViewSanPham.RowHeadersWidth = 51;
+            this.dataGridViewSanPham.RowTemplate.Height = 24;
+            this.dataGridViewSanPham.Size = new System.Drawing.Size(604, 272);
+            this.dataGridViewSanPham.TabIndex = 22;
+            this.dataGridViewSanPham.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label9
             // 
@@ -350,42 +351,60 @@ namespace CHQLDoNoiThat.FormsStaff
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.btnIn_TaoHoaDon);
-            this.panel8.Controls.Add(this.labTongTien_TaoHoaDon);
+            this.panel8.Controls.Add(this.btnXoa);
+            this.panel8.Controls.Add(this.btnThanhToan);
+            this.panel8.Controls.Add(this.lblTongTien);
             this.panel8.Location = new System.Drawing.Point(138, 346);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(769, 57);
             this.panel8.TabIndex = 25;
             this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
-            // btnIn_TaoHoaDon
+            // btnXoa
             // 
-            this.btnIn_TaoHoaDon.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnIn_TaoHoaDon.FlatAppearance.BorderSize = 0;
-            this.btnIn_TaoHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIn_TaoHoaDon.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIn_TaoHoaDon.ForeColor = System.Drawing.Color.White;
-            this.btnIn_TaoHoaDon.Location = new System.Drawing.Point(558, 6);
-            this.btnIn_TaoHoaDon.Margin = new System.Windows.Forms.Padding(0);
-            this.btnIn_TaoHoaDon.Name = "btnIn_TaoHoaDon";
-            this.btnIn_TaoHoaDon.Size = new System.Drawing.Size(158, 39);
-            this.btnIn_TaoHoaDon.TabIndex = 23;
-            this.btnIn_TaoHoaDon.TabStop = false;
-            this.btnIn_TaoHoaDon.Text = "In hóa đơn";
-            this.btnIn_TaoHoaDon.UseVisualStyleBackColor = false;
-            this.btnIn_TaoHoaDon.Click += new System.EventHandler(this.btnIn_TaoHoaDon_Click);
+            this.btnXoa.AutoSize = true;
+            this.btnXoa.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnXoa.FlatAppearance.BorderSize = 0;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Location = new System.Drawing.Point(420, 6);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(0);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(120, 40);
+            this.btnXoa.TabIndex = 25;
+            this.btnXoa.TabStop = false;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = false;
             // 
-            // labTongTien_TaoHoaDon
+            // btnThanhToan
             // 
-            this.labTongTien_TaoHoaDon.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labTongTien_TaoHoaDon.ForeColor = System.Drawing.Color.SteelBlue;
-            this.labTongTien_TaoHoaDon.Location = new System.Drawing.Point(37, 10);
-            this.labTongTien_TaoHoaDon.Name = "labTongTien_TaoHoaDon";
-            this.labTongTien_TaoHoaDon.Size = new System.Drawing.Size(307, 29);
-            this.labTongTien_TaoHoaDon.TabIndex = 24;
-            this.labTongTien_TaoHoaDon.Text = "Tổng tiền:";
-            this.labTongTien_TaoHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labTongTien_TaoHoaDon.Click += new System.EventHandler(this.labTongTien_TaoHoaDon_Click);
+            this.btnThanhToan.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnThanhToan.FlatAppearance.BorderSize = 0;
+            this.btnThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThanhToan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThanhToan.ForeColor = System.Drawing.Color.White;
+            this.btnThanhToan.Location = new System.Drawing.Point(558, 6);
+            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(0);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(158, 39);
+            this.btnThanhToan.TabIndex = 23;
+            this.btnThanhToan.TabStop = false;
+            this.btnThanhToan.Text = "Thanh toán";
+            this.btnThanhToan.UseVisualStyleBackColor = false;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnIn_TaoHoaDon_Click);
+            // 
+            // lblTongTien
+            // 
+            this.lblTongTien.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTongTien.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lblTongTien.Location = new System.Drawing.Point(37, 10);
+            this.lblTongTien.Name = "lblTongTien";
+            this.lblTongTien.Size = new System.Drawing.Size(348, 29);
+            this.lblTongTien.TabIndex = 24;
+            this.lblTongTien.Text = "Tổng tiền:";
+            this.lblTongTien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTongTien.Click += new System.EventHandler(this.labTongTien_TaoHoaDon_Click);
             // 
             // label11
             // 
@@ -408,7 +427,7 @@ namespace CHQLDoNoiThat.FormsStaff
             this.dataGridViewChiTietHoaDon.Name = "dataGridViewChiTietHoaDon";
             this.dataGridViewChiTietHoaDon.RowHeadersWidth = 51;
             this.dataGridViewChiTietHoaDon.RowTemplate.Height = 24;
-            this.dataGridViewChiTietHoaDon.Size = new System.Drawing.Size(940, 309);
+            this.dataGridViewChiTietHoaDon.Size = new System.Drawing.Size(953, 309);
             this.dataGridViewChiTietHoaDon.TabIndex = 21;
             this.dataGridViewChiTietHoaDon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewChiTietHoaDon_CellContentClick);
             // 
@@ -420,17 +439,17 @@ namespace CHQLDoNoiThat.FormsStaff
             // elipseControl3
             // 
             this.elipseControl3.CornerRadius = 30;
-            this.elipseControl3.TargetControl = this.btnThemSanPham_TaoHoaDon;
+            this.elipseControl3.TargetControl = this.btnThemSanPham;
             // 
             // elipseControl4
             // 
             this.elipseControl4.CornerRadius = 30;
-            this.elipseControl4.TargetControl = this.btnTaiLai_TaoHoaDon;
+            this.elipseControl4.TargetControl = this.btnTaiLai;
             // 
             // elipseControl5
             // 
             this.elipseControl5.CornerRadius = 30;
-            this.elipseControl5.TargetControl = this.btnIn_TaoHoaDon;
+            this.elipseControl5.TargetControl = this.btnThanhToan;
             // 
             // FormBill
             // 
@@ -451,9 +470,10 @@ namespace CHQLDoNoiThat.FormsStaff
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSanPham)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewChiTietHoaDon)).EndInit();
             this.ResumeLayout(false);
 
@@ -465,30 +485,31 @@ namespace CHQLDoNoiThat.FormsStaff
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button btnIn_TaoHoaDon;
-        private System.Windows.Forms.Label labTongTien_TaoHoaDon;
+        private System.Windows.Forms.Button btnThanhToan;
+        private System.Windows.Forms.Label lblTongTien;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DataGridView dataGridViewChiTietHoaDon;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewSanPham;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnThemSanPham_TaoHoaDon;
+        private System.Windows.Forms.Button btnThemSanPham;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox txtDonGia;
-        private System.Windows.Forms.Button btnTaiLai_TaoHoaDon;
+        private System.Windows.Forms.Button btnTaiLai;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.TextBox txtTenSanPham;
         private System.Windows.Forms.Label label10;
         private ElipseToolDemo.ElipseControl elipseControl2;
         private ElipseToolDemo.ElipseControl elipseControl3;
         private ElipseToolDemo.ElipseControl elipseControl4;
         private ElipseToolDemo.ElipseControl elipseControl5;
-        private ComboBoxControl cmbLoaiSpanPham;
+        private ComboBoxControl cmbLoaiSanPham;
+        private System.Windows.Forms.Button btnXoa;
     }
 }

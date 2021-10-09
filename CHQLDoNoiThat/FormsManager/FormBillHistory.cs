@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace CHQLDoNoiThat.FormsManager
 {
-    public partial class FormCategory : Form
+    public partial class FormBillHistory : Form
     {
-        public FormCategory()
+        public FormBillHistory()
         {
             InitializeComponent();
         }
 
-        private void btnTaiLai_Click(object sender, EventArgs e)
+        private void btnThem_Kho_Click(object sender, EventArgs e)
         {
 
         }

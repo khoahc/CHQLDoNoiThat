@@ -32,9 +32,9 @@ namespace CHQLDoNoiThat.FormsStaff
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridViewLichSuHoaDon = new System.Windows.Forms.DataGridView();
             this.datePickerControlLichSuHoaDon = new CHQLDoNoiThat.DatePickerControl();
             this.elipseControl2 = new ElipseToolDemo.ElipseControl();
+            this.dataGridViewLichSuHoaDon = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel12.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -80,20 +80,6 @@ namespace CHQLDoNoiThat.FormsStaff
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1034, 698);
             this.tableLayoutPanel2.TabIndex = 22;
             // 
-            // dataGridViewLichSuHoaDon
-            // 
-            this.dataGridViewLichSuHoaDon.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewLichSuHoaDon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewLichSuHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewLichSuHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewLichSuHoaDon.Location = new System.Drawing.Point(34, 3);
-            this.dataGridViewLichSuHoaDon.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
-            this.dataGridViewLichSuHoaDon.Name = "dataGridViewLichSuHoaDon";
-            this.dataGridViewLichSuHoaDon.RowHeadersWidth = 51;
-            this.dataGridViewLichSuHoaDon.RowTemplate.Height = 24;
-            this.dataGridViewLichSuHoaDon.Size = new System.Drawing.Size(965, 675);
-            this.dataGridViewLichSuHoaDon.TabIndex = 21;
-            // 
             // datePickerControlLichSuHoaDon
             // 
             this.datePickerControlLichSuHoaDon.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -112,6 +98,20 @@ namespace CHQLDoNoiThat.FormsStaff
             // 
             this.elipseControl2.CornerRadius = 30;
             this.elipseControl2.TargetControl = this;
+            // 
+            // dataGridViewLichSuHoaDon
+            // 
+            this.dataGridViewLichSuHoaDon.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewLichSuHoaDon.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewLichSuHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewLichSuHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewLichSuHoaDon.Location = new System.Drawing.Point(34, 3);
+            this.dataGridViewLichSuHoaDon.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
+            this.dataGridViewLichSuHoaDon.Name = "dataGridViewLichSuHoaDon";
+            this.dataGridViewLichSuHoaDon.RowHeadersWidth = 51;
+            this.dataGridViewLichSuHoaDon.RowTemplate.Height = 24;
+            this.dataGridViewLichSuHoaDon.Size = new System.Drawing.Size(965, 675);
+            this.dataGridViewLichSuHoaDon.TabIndex = 21;
             // 
             // FormBillHistory
             // 
@@ -137,8 +137,8 @@ namespace CHQLDoNoiThat.FormsStaff
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.DataGridView dataGridViewLichSuHoaDon;
         private ElipseToolDemo.ElipseControl elipseControl2;
         private DatePickerControl datePickerControlLichSuHoaDon;
+        private System.Windows.Forms.DataGridView dataGridViewLichSuHoaDon;
     }
 }

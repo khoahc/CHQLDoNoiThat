@@ -73,6 +73,18 @@
     <Compile Include="FormManager.Designer.cs">
       <DependentUpon>FormManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsManager\FormBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsManager\FormBill.Designer.cs">
+      <DependentUpon>FormBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsManager\FormBillHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsManager\FormBillHistory.Designer.cs">
+      <DependentUpon>FormBillHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsManager\FormCategory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +102,12 @@
     </Compile>
     <Compile Include="FormsManager\FormProduct.Designer.cs">
       <DependentUpon>FormProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsManager\FormStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsManager\FormStaff.Designer.cs">
+      <DependentUpon>FormStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsStaff\FormBill.cs">
       <SubType>Form</SubType>
@@ -126,6 +144,12 @@
     <EmbeddedResource Include="FormManager.resx">
       <DependentUpon>FormManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsManager\FormBill.resx">
+      <DependentUpon>FormBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsManager\FormBillHistory.resx">
+      <DependentUpon>FormBillHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsManager\FormCategory.resx">
       <DependentUpon>FormCategory.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsManager\FormProduct.resx">
       <DependentUpon>FormProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsManager\FormStaff.resx">
+      <DependentUpon>FormStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsStaff\FormBill.resx">
       <DependentUpon>FormBill.cs</DependentUpon>

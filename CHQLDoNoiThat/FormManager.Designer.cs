@@ -38,15 +38,16 @@ namespace CHQLDoNoiThat
             this.btnMaximize = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanelMenu = new System.Windows.Forms.TableLayoutPanel();
-            this.btnThongKe_FManager = new System.Windows.Forms.Button();
-            this.btnLoaiSanPham_FManager = new System.Windows.Forms.Button();
-            this.btnNhanVien_FManager = new System.Windows.Forms.Button();
-            this.btnSanPham_FManager = new System.Windows.Forms.Button();
-            this.btnLichSuHoaDon_FManager = new System.Windows.Forms.Button();
-            this.btnKho_FManager = new System.Windows.Forms.Button();
             this.lblTenDangNhap = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.tableLayoutPanelMenu = new System.Windows.Forms.TableLayoutPanel();
+            this.btnThongKe_FManager = new System.Windows.Forms.Button();
+            this.btnTaoHoaDon_TManager = new System.Windows.Forms.Button();
+            this.btnLichSuHoaDon_FManager = new System.Windows.Forms.Button();
+            this.btnNhanVien_FManager = new System.Windows.Forms.Button();
+            this.btnSanPham_FManager = new System.Windows.Forms.Button();
+            this.btnKho_FManager = new System.Windows.Forms.Button();
+            this.btnLoaiSanPham_FManager = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
@@ -87,6 +88,7 @@ namespace CHQLDoNoiThat
             this.tableLayoutPanelDesktop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4F));
             this.tableLayoutPanelDesktop.Size = new System.Drawing.Size(1040, 760);
             this.tableLayoutPanelDesktop.TabIndex = 0;
+            this.tableLayoutPanelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanelDesktop_Paint);
             // 
             // tableLayoutPanel6
             // 
@@ -173,9 +175,9 @@ namespace CHQLDoNoiThat
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanelMenu, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblTenDangNhap, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label5, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanelMenu, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
@@ -186,160 +188,6 @@ namespace CHQLDoNoiThat
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(260, 800);
             this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // tableLayoutPanelMenu
-            // 
-            this.tableLayoutPanelMenu.ColumnCount = 1;
-            this.tableLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelMenu.Controls.Add(this.btnThongKe_FManager, 0, 5);
-            this.tableLayoutPanelMenu.Controls.Add(this.btnLoaiSanPham_FManager, 0, 1);
-            this.tableLayoutPanelMenu.Controls.Add(this.btnNhanVien_FManager, 0, 0);
-            this.tableLayoutPanelMenu.Controls.Add(this.btnSanPham_FManager, 0, 2);
-            this.tableLayoutPanelMenu.Controls.Add(this.btnLichSuHoaDon_FManager, 0, 4);
-            this.tableLayoutPanelMenu.Controls.Add(this.btnKho_FManager, 0, 3);
-            this.tableLayoutPanelMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelMenu.Location = new System.Drawing.Point(0, 80);
-            this.tableLayoutPanelMenu.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanelMenu.Name = "tableLayoutPanelMenu";
-            this.tableLayoutPanelMenu.RowCount = 6;
-            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanelMenu.Size = new System.Drawing.Size(260, 640);
-            this.tableLayoutPanelMenu.TabIndex = 0;
-            // 
-            // btnThongKe_FManager
-            // 
-            this.btnThongKe_FManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThongKe_FManager.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnThongKe_FManager.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnThongKe_FManager.FlatAppearance.BorderSize = 0;
-            this.btnThongKe_FManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongKe_FManager.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongKe_FManager.ForeColor = System.Drawing.Color.White;
-            this.btnThongKe_FManager.Image = global::CHQLDoNoiThat.Properties.Resources.statistics_26px;
-            this.btnThongKe_FManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKe_FManager.Location = new System.Drawing.Point(3, 555);
-            this.btnThongKe_FManager.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.btnThongKe_FManager.Name = "btnThongKe_FManager";
-            this.btnThongKe_FManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnThongKe_FManager.Size = new System.Drawing.Size(257, 60);
-            this.btnThongKe_FManager.TabIndex = 24;
-            this.btnThongKe_FManager.Text = "   Thống kê";
-            this.btnThongKe_FManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnThongKe_FManager.UseVisualStyleBackColor = true;
-            // 
-            // btnLoaiSanPham_FManager
-            // 
-            this.btnLoaiSanPham_FManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLoaiSanPham_FManager.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnLoaiSanPham_FManager.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnLoaiSanPham_FManager.FlatAppearance.BorderSize = 0;
-            this.btnLoaiSanPham_FManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoaiSanPham_FManager.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoaiSanPham_FManager.ForeColor = System.Drawing.Color.White;
-            this.btnLoaiSanPham_FManager.Image = global::CHQLDoNoiThat.Properties.Resources.category_24px;
-            this.btnLoaiSanPham_FManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLoaiSanPham_FManager.Location = new System.Drawing.Point(3, 129);
-            this.btnLoaiSanPham_FManager.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.btnLoaiSanPham_FManager.Name = "btnLoaiSanPham_FManager";
-            this.btnLoaiSanPham_FManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnLoaiSanPham_FManager.Size = new System.Drawing.Size(257, 60);
-            this.btnLoaiSanPham_FManager.TabIndex = 20;
-            this.btnLoaiSanPham_FManager.Text = "   Loại sản phẩm";
-            this.btnLoaiSanPham_FManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLoaiSanPham_FManager.UseVisualStyleBackColor = true;
-            this.btnLoaiSanPham_FManager.Click += new System.EventHandler(this.btnLoaiSanPham_FManager_Click);
-            // 
-            // btnNhanVien_FManager
-            // 
-            this.btnNhanVien_FManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNhanVien_FManager.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnNhanVien_FManager.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnNhanVien_FManager.FlatAppearance.BorderSize = 0;
-            this.btnNhanVien_FManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNhanVien_FManager.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNhanVien_FManager.ForeColor = System.Drawing.Color.White;
-            this.btnNhanVien_FManager.Image = global::CHQLDoNoiThat.Properties.Resources.staff_24px;
-            this.btnNhanVien_FManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNhanVien_FManager.Location = new System.Drawing.Point(2, 23);
-            this.btnNhanVien_FManager.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
-            this.btnNhanVien_FManager.Name = "btnNhanVien_FManager";
-            this.btnNhanVien_FManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnNhanVien_FManager.Size = new System.Drawing.Size(258, 60);
-            this.btnNhanVien_FManager.TabIndex = 19;
-            this.btnNhanVien_FManager.Text = "   Nhân viên";
-            this.btnNhanVien_FManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNhanVien_FManager.UseVisualStyleBackColor = true;
-            this.btnNhanVien_FManager.Click += new System.EventHandler(this.btnNhanVien_FManager_Click);
-            // 
-            // btnSanPham_FManager
-            // 
-            this.btnSanPham_FManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSanPham_FManager.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnSanPham_FManager.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnSanPham_FManager.FlatAppearance.BorderSize = 0;
-            this.btnSanPham_FManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSanPham_FManager.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSanPham_FManager.ForeColor = System.Drawing.Color.White;
-            this.btnSanPham_FManager.Image = global::CHQLDoNoiThat.Properties.Resources.product_24px;
-            this.btnSanPham_FManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSanPham_FManager.Location = new System.Drawing.Point(3, 235);
-            this.btnSanPham_FManager.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.btnSanPham_FManager.Name = "btnSanPham_FManager";
-            this.btnSanPham_FManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSanPham_FManager.Size = new System.Drawing.Size(257, 60);
-            this.btnSanPham_FManager.TabIndex = 22;
-            this.btnSanPham_FManager.Text = "   Sản phẩm";
-            this.btnSanPham_FManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSanPham_FManager.UseVisualStyleBackColor = true;
-            this.btnSanPham_FManager.Click += new System.EventHandler(this.btnSanPham_FManager_Click);
-            // 
-            // btnLichSuHoaDon_FManager
-            // 
-            this.btnLichSuHoaDon_FManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLichSuHoaDon_FManager.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnLichSuHoaDon_FManager.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnLichSuHoaDon_FManager.FlatAppearance.BorderSize = 0;
-            this.btnLichSuHoaDon_FManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLichSuHoaDon_FManager.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLichSuHoaDon_FManager.ForeColor = System.Drawing.Color.White;
-            this.btnLichSuHoaDon_FManager.Image = global::CHQLDoNoiThat.Properties.Resources.order_history_30px;
-            this.btnLichSuHoaDon_FManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLichSuHoaDon_FManager.Location = new System.Drawing.Point(0, 447);
-            this.btnLichSuHoaDon_FManager.Margin = new System.Windows.Forms.Padding(0);
-            this.btnLichSuHoaDon_FManager.Name = "btnLichSuHoaDon_FManager";
-            this.btnLichSuHoaDon_FManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnLichSuHoaDon_FManager.Size = new System.Drawing.Size(260, 60);
-            this.btnLichSuHoaDon_FManager.TabIndex = 21;
-            this.btnLichSuHoaDon_FManager.Text = "   Lịch sử hóa đơn";
-            this.btnLichSuHoaDon_FManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLichSuHoaDon_FManager.UseVisualStyleBackColor = true;
-            // 
-            // btnKho_FManager
-            // 
-            this.btnKho_FManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnKho_FManager.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnKho_FManager.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnKho_FManager.FlatAppearance.BorderSize = 0;
-            this.btnKho_FManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKho_FManager.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKho_FManager.ForeColor = System.Drawing.Color.White;
-            this.btnKho_FManager.Image = global::CHQLDoNoiThat.Properties.Resources.inventory_flow_32px;
-            this.btnKho_FManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKho_FManager.Location = new System.Drawing.Point(0, 341);
-            this.btnKho_FManager.Margin = new System.Windows.Forms.Padding(0);
-            this.btnKho_FManager.Name = "btnKho_FManager";
-            this.btnKho_FManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnKho_FManager.Size = new System.Drawing.Size(260, 60);
-            this.btnKho_FManager.TabIndex = 23;
-            this.btnKho_FManager.Text = "   Kho";
-            this.btnKho_FManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnKho_FManager.UseVisualStyleBackColor = true;
-            this.btnKho_FManager.Click += new System.EventHandler(this.btnKho_FManager_Click);
             // 
             // lblTenDangNhap
             // 
@@ -371,6 +219,184 @@ namespace CHQLDoNoiThat
             this.label5.Text = "     Đăng xuất";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label5.UseCompatibleTextRendering = true;
+            // 
+            // tableLayoutPanelMenu
+            // 
+            this.tableLayoutPanelMenu.ColumnCount = 1;
+            this.tableLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelMenu.Controls.Add(this.btnThongKe_FManager, 0, 6);
+            this.tableLayoutPanelMenu.Controls.Add(this.btnTaoHoaDon_TManager, 0, 4);
+            this.tableLayoutPanelMenu.Controls.Add(this.btnLichSuHoaDon_FManager, 0, 5);
+            this.tableLayoutPanelMenu.Controls.Add(this.btnNhanVien_FManager, 0, 0);
+            this.tableLayoutPanelMenu.Controls.Add(this.btnSanPham_FManager, 0, 2);
+            this.tableLayoutPanelMenu.Controls.Add(this.btnKho_FManager, 0, 3);
+            this.tableLayoutPanelMenu.Controls.Add(this.btnLoaiSanPham_FManager, 0, 1);
+            this.tableLayoutPanelMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelMenu.Location = new System.Drawing.Point(3, 83);
+            this.tableLayoutPanelMenu.Name = "tableLayoutPanelMenu";
+            this.tableLayoutPanelMenu.RowCount = 7;
+            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanelMenu.Size = new System.Drawing.Size(254, 634);
+            this.tableLayoutPanelMenu.TabIndex = 17;
+            // 
+            // btnThongKe_FManager
+            // 
+            this.btnThongKe_FManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThongKe_FManager.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnThongKe_FManager.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnThongKe_FManager.FlatAppearance.BorderSize = 0;
+            this.btnThongKe_FManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongKe_FManager.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongKe_FManager.ForeColor = System.Drawing.Color.White;
+            this.btnThongKe_FManager.Image = global::CHQLDoNoiThat.Properties.Resources.statistics_26px;
+            this.btnThongKe_FManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThongKe_FManager.Location = new System.Drawing.Point(3, 557);
+            this.btnThongKe_FManager.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btnThongKe_FManager.Name = "btnThongKe_FManager";
+            this.btnThongKe_FManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnThongKe_FManager.Size = new System.Drawing.Size(251, 60);
+            this.btnThongKe_FManager.TabIndex = 24;
+            this.btnThongKe_FManager.Text = "   Thống kê";
+            this.btnThongKe_FManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThongKe_FManager.UseVisualStyleBackColor = true;
+            // 
+            // btnTaoHoaDon_TManager
+            // 
+            this.btnTaoHoaDon_TManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTaoHoaDon_TManager.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnTaoHoaDon_TManager.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnTaoHoaDon_TManager.FlatAppearance.BorderSize = 0;
+            this.btnTaoHoaDon_TManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaoHoaDon_TManager.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaoHoaDon_TManager.ForeColor = System.Drawing.Color.White;
+            this.btnTaoHoaDon_TManager.Image = global::CHQLDoNoiThat.Properties.Resources.bill_30px;
+            this.btnTaoHoaDon_TManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaoHoaDon_TManager.Location = new System.Drawing.Point(0, 375);
+            this.btnTaoHoaDon_TManager.Margin = new System.Windows.Forms.Padding(0);
+            this.btnTaoHoaDon_TManager.Name = "btnTaoHoaDon_TManager";
+            this.btnTaoHoaDon_TManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnTaoHoaDon_TManager.Size = new System.Drawing.Size(254, 60);
+            this.btnTaoHoaDon_TManager.TabIndex = 24;
+            this.btnTaoHoaDon_TManager.Text = "   Tạo hóa đơn";
+            this.btnTaoHoaDon_TManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTaoHoaDon_TManager.UseVisualStyleBackColor = true;
+            this.btnTaoHoaDon_TManager.Click += new System.EventHandler(this.btnTaoHoaDon_TManager_Click);
+            // 
+            // btnLichSuHoaDon_FManager
+            // 
+            this.btnLichSuHoaDon_FManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLichSuHoaDon_FManager.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnLichSuHoaDon_FManager.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnLichSuHoaDon_FManager.FlatAppearance.BorderSize = 0;
+            this.btnLichSuHoaDon_FManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLichSuHoaDon_FManager.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLichSuHoaDon_FManager.ForeColor = System.Drawing.Color.White;
+            this.btnLichSuHoaDon_FManager.Image = global::CHQLDoNoiThat.Properties.Resources.order_history_30px;
+            this.btnLichSuHoaDon_FManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLichSuHoaDon_FManager.Location = new System.Drawing.Point(0, 465);
+            this.btnLichSuHoaDon_FManager.Margin = new System.Windows.Forms.Padding(0);
+            this.btnLichSuHoaDon_FManager.Name = "btnLichSuHoaDon_FManager";
+            this.btnLichSuHoaDon_FManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnLichSuHoaDon_FManager.Size = new System.Drawing.Size(254, 60);
+            this.btnLichSuHoaDon_FManager.TabIndex = 21;
+            this.btnLichSuHoaDon_FManager.Text = "   Lịch sử hóa đơn";
+            this.btnLichSuHoaDon_FManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLichSuHoaDon_FManager.UseVisualStyleBackColor = true;
+            this.btnLichSuHoaDon_FManager.Click += new System.EventHandler(this.btnLichSuHoaDon_FManager_Click);
+            // 
+            // btnNhanVien_FManager
+            // 
+            this.btnNhanVien_FManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNhanVien_FManager.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnNhanVien_FManager.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnNhanVien_FManager.FlatAppearance.BorderSize = 0;
+            this.btnNhanVien_FManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhanVien_FManager.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhanVien_FManager.ForeColor = System.Drawing.Color.White;
+            this.btnNhanVien_FManager.Image = global::CHQLDoNoiThat.Properties.Resources.staff_24px;
+            this.btnNhanVien_FManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNhanVien_FManager.Location = new System.Drawing.Point(2, 15);
+            this.btnNhanVien_FManager.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.btnNhanVien_FManager.Name = "btnNhanVien_FManager";
+            this.btnNhanVien_FManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnNhanVien_FManager.Size = new System.Drawing.Size(252, 60);
+            this.btnNhanVien_FManager.TabIndex = 19;
+            this.btnNhanVien_FManager.Text = "   Nhân viên";
+            this.btnNhanVien_FManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNhanVien_FManager.UseVisualStyleBackColor = true;
+            this.btnNhanVien_FManager.Click += new System.EventHandler(this.btnNhanVien_FManager_Click);
+            // 
+            // btnSanPham_FManager
+            // 
+            this.btnSanPham_FManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSanPham_FManager.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnSanPham_FManager.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnSanPham_FManager.FlatAppearance.BorderSize = 0;
+            this.btnSanPham_FManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSanPham_FManager.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSanPham_FManager.ForeColor = System.Drawing.Color.White;
+            this.btnSanPham_FManager.Image = global::CHQLDoNoiThat.Properties.Resources.product_24px;
+            this.btnSanPham_FManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSanPham_FManager.Location = new System.Drawing.Point(3, 195);
+            this.btnSanPham_FManager.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btnSanPham_FManager.Name = "btnSanPham_FManager";
+            this.btnSanPham_FManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnSanPham_FManager.Size = new System.Drawing.Size(251, 60);
+            this.btnSanPham_FManager.TabIndex = 22;
+            this.btnSanPham_FManager.Text = "   Sản phẩm";
+            this.btnSanPham_FManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSanPham_FManager.UseVisualStyleBackColor = true;
+            this.btnSanPham_FManager.Click += new System.EventHandler(this.btnSanPham_FManager_Click);
+            // 
+            // btnKho_FManager
+            // 
+            this.btnKho_FManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnKho_FManager.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnKho_FManager.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnKho_FManager.FlatAppearance.BorderSize = 0;
+            this.btnKho_FManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKho_FManager.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKho_FManager.ForeColor = System.Drawing.Color.White;
+            this.btnKho_FManager.Image = global::CHQLDoNoiThat.Properties.Resources.inventory_flow_32px;
+            this.btnKho_FManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKho_FManager.Location = new System.Drawing.Point(0, 285);
+            this.btnKho_FManager.Margin = new System.Windows.Forms.Padding(0);
+            this.btnKho_FManager.Name = "btnKho_FManager";
+            this.btnKho_FManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnKho_FManager.Size = new System.Drawing.Size(254, 60);
+            this.btnKho_FManager.TabIndex = 23;
+            this.btnKho_FManager.Text = "   Kho";
+            this.btnKho_FManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnKho_FManager.UseVisualStyleBackColor = true;
+            this.btnKho_FManager.Click += new System.EventHandler(this.btnKho_FManager_Click);
+            // 
+            // btnLoaiSanPham_FManager
+            // 
+            this.btnLoaiSanPham_FManager.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLoaiSanPham_FManager.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnLoaiSanPham_FManager.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnLoaiSanPham_FManager.FlatAppearance.BorderSize = 0;
+            this.btnLoaiSanPham_FManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoaiSanPham_FManager.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoaiSanPham_FManager.ForeColor = System.Drawing.Color.White;
+            this.btnLoaiSanPham_FManager.Image = global::CHQLDoNoiThat.Properties.Resources.category_24px;
+            this.btnLoaiSanPham_FManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLoaiSanPham_FManager.Location = new System.Drawing.Point(3, 105);
+            this.btnLoaiSanPham_FManager.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btnLoaiSanPham_FManager.Name = "btnLoaiSanPham_FManager";
+            this.btnLoaiSanPham_FManager.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnLoaiSanPham_FManager.Size = new System.Drawing.Size(251, 60);
+            this.btnLoaiSanPham_FManager.TabIndex = 20;
+            this.btnLoaiSanPham_FManager.Text = "   Loại sản phẩm";
+            this.btnLoaiSanPham_FManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLoaiSanPham_FManager.UseVisualStyleBackColor = true;
+            this.btnLoaiSanPham_FManager.Click += new System.EventHandler(this.btnLoaiSanPham_FManager_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -419,7 +445,6 @@ namespace CHQLDoNoiThat
         private System.Windows.Forms.Label btnMaximize;
         private System.Windows.Forms.Label btnMinimize;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelMenu;
         private System.Windows.Forms.Button btnLichSuHoaDon_FManager;
         private System.Windows.Forms.Button btnLoaiSanPham_FManager;
         private System.Windows.Forms.Button btnNhanVien_FManager;
@@ -429,5 +454,7 @@ namespace CHQLDoNoiThat
         private System.Windows.Forms.Button btnThongKe_FManager;
         private System.Windows.Forms.Button btnSanPham_FManager;
         private System.Windows.Forms.Button btnKho_FManager;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelMenu;
+        private System.Windows.Forms.Button btnTaoHoaDon_TManager;
     }
 }

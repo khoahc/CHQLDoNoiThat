@@ -16,5 +16,10 @@ namespace CHQLDoNoiThat.FormsManager
         {
             InitializeComponent();
         }
+
+        private void btnXoa_Kho_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

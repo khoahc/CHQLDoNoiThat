@@ -86,7 +86,8 @@ namespace CHQLDoNoiThat
 
         private void btnNhanVien_FManager_Click(object sender, EventArgs e)
         {
-
+            ActivateButton(sender);
+            OpenChildForm(new FormsManager.FormStaff(), sender);
         }
 
         private void btnKho_FManager_Click(object sender, EventArgs e)
@@ -105,6 +106,23 @@ namespace CHQLDoNoiThat
         {
             ActivateButton(sender);
             OpenChildForm(new FormsManager.FormProduct(), sender);
+        }
+
+        private void btnTaoHoaDon_TManager_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new FormsManager.FormBill(), sender);
+        }
+
+        private void btnLichSuHoaDon_FManager_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new FormsManager.FormBillHistory(), sender);
+        }
+
+        private void tableLayoutPanelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

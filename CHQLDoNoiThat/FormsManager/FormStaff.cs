@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace CHQLDoNoiThat.FormsManager
 {
-    public partial class FormCategory : Form
+    public partial class FormStaff : Form
     {
-        public FormCategory()
+        public FormStaff()
         {
             InitializeComponent();
-        }
-
-        private void btnTaiLai_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
