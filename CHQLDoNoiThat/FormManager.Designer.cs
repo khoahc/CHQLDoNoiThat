@@ -33,17 +33,16 @@ namespace CHQLDoNoiThat
             this.tableLayoutPanelDesktop = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnClose = new System.Windows.Forms.Label();
-            this.btnMaximize = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanelMenu = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblTenDangNhap = new System.Windows.Forms.Label();
             this.lblDangXuat = new System.Windows.Forms.Label();
+            this.tableLayoutPanelMenu = new System.Windows.Forms.TableLayoutPanel();
             this.btnThongKe_FManager = new System.Windows.Forms.Button();
             this.btnTaoHoaDon_FManager = new System.Windows.Forms.Button();
             this.btnLichSuHoaDon_FManager = new System.Windows.Forms.Button();
@@ -51,7 +50,7 @@ namespace CHQLDoNoiThat
             this.btnSanPham_FManager = new System.Windows.Forms.Button();
             this.btnKho_FManager = new System.Windows.Forms.Button();
             this.btnLoaiSanPham_FManager = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanelDesktop.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -118,6 +117,15 @@ namespace CHQLDoNoiThat
             this.label2.TabIndex = 1;
             this.label2.Text = "Chúc bạn một ngày làm việc hiệu quả";
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Image = global::CHQLDoNoiThat.Properties.Resources.wink_100px;
+            this.label1.Location = new System.Drawing.Point(315, 175);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(346, 152);
+            this.label1.TabIndex = 0;
+            // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 2;
@@ -150,7 +158,6 @@ namespace CHQLDoNoiThat
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.btnClose);
-            this.flowLayoutPanel1.Controls.Add(this.btnMaximize);
             this.flowLayoutPanel1.Controls.Add(this.btnMinimize);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
@@ -173,25 +180,12 @@ namespace CHQLDoNoiThat
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // btnMaximize
-            // 
-            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximize.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMaximize.ForeColor = System.Drawing.Color.White;
-            this.btnMaximize.Location = new System.Drawing.Point(77, 0);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(35, 35);
-            this.btnMaximize.TabIndex = 22;
-            this.btnMaximize.Text = "O";
-            this.btnMaximize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
-            // 
             // btnMinimize
             // 
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
-            this.btnMinimize.Location = new System.Drawing.Point(36, 0);
+            this.btnMinimize.Location = new System.Drawing.Point(77, 0);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(35, 35);
             this.btnMinimize.TabIndex = 21;
@@ -216,46 +210,6 @@ namespace CHQLDoNoiThat
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(260, 800);
             this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // tableLayoutPanelMenu
-            // 
-            this.tableLayoutPanelMenu.ColumnCount = 1;
-            this.tableLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelMenu.Controls.Add(this.btnThongKe_FManager, 0, 6);
-            this.tableLayoutPanelMenu.Controls.Add(this.btnTaoHoaDon_FManager, 0, 4);
-            this.tableLayoutPanelMenu.Controls.Add(this.btnLichSuHoaDon_FManager, 0, 5);
-            this.tableLayoutPanelMenu.Controls.Add(this.btnNhanVien_FManager, 0, 0);
-            this.tableLayoutPanelMenu.Controls.Add(this.btnSanPham_FManager, 0, 2);
-            this.tableLayoutPanelMenu.Controls.Add(this.btnKho_FManager, 0, 3);
-            this.tableLayoutPanelMenu.Controls.Add(this.btnLoaiSanPham_FManager, 0, 1);
-            this.tableLayoutPanelMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelMenu.Location = new System.Drawing.Point(3, 83);
-            this.tableLayoutPanelMenu.Name = "tableLayoutPanelMenu";
-            this.tableLayoutPanelMenu.RowCount = 7;
-            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanelMenu.Size = new System.Drawing.Size(254, 634);
-            this.tableLayoutPanelMenu.TabIndex = 17;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1300, 800);
-            this.tableLayoutPanel1.TabIndex = 1;
             // 
             // lblTenDangNhap
             // 
@@ -289,6 +243,31 @@ namespace CHQLDoNoiThat
             this.lblDangXuat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblDangXuat.UseCompatibleTextRendering = true;
             this.lblDangXuat.Click += new System.EventHandler(this.lblDangXuat_Click);
+            // 
+            // tableLayoutPanelMenu
+            // 
+            this.tableLayoutPanelMenu.ColumnCount = 1;
+            this.tableLayoutPanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelMenu.Controls.Add(this.btnThongKe_FManager, 0, 6);
+            this.tableLayoutPanelMenu.Controls.Add(this.btnTaoHoaDon_FManager, 0, 4);
+            this.tableLayoutPanelMenu.Controls.Add(this.btnLichSuHoaDon_FManager, 0, 5);
+            this.tableLayoutPanelMenu.Controls.Add(this.btnNhanVien_FManager, 0, 0);
+            this.tableLayoutPanelMenu.Controls.Add(this.btnSanPham_FManager, 0, 2);
+            this.tableLayoutPanelMenu.Controls.Add(this.btnKho_FManager, 0, 3);
+            this.tableLayoutPanelMenu.Controls.Add(this.btnLoaiSanPham_FManager, 0, 1);
+            this.tableLayoutPanelMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelMenu.Location = new System.Drawing.Point(3, 83);
+            this.tableLayoutPanelMenu.Name = "tableLayoutPanelMenu";
+            this.tableLayoutPanelMenu.RowCount = 7;
+            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanelMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanelMenu.Size = new System.Drawing.Size(254, 634);
+            this.tableLayoutPanelMenu.TabIndex = 17;
             // 
             // btnThongKe_FManager
             // 
@@ -444,14 +423,20 @@ namespace CHQLDoNoiThat
             this.btnLoaiSanPham_FManager.UseVisualStyleBackColor = true;
             this.btnLoaiSanPham_FManager.Click += new System.EventHandler(this.btnLoaiSanPham_FManager_Click);
             // 
-            // label1
+            // tableLayoutPanel1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Image = global::CHQLDoNoiThat.Properties.Resources.wink_100px;
-            this.label1.Location = new System.Drawing.Point(315, 175);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(346, 152);
-            this.label1.TabIndex = 0;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1300, 800);
+            this.tableLayoutPanel1.TabIndex = 1;
             // 
             // FormManager
             // 
@@ -485,7 +470,6 @@ namespace CHQLDoNoiThat
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label btnClose;
-        private System.Windows.Forms.Label btnMaximize;
         private System.Windows.Forms.Label btnMinimize;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button btnLichSuHoaDon_FManager;

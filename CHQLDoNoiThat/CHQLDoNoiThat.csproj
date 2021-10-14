@@ -151,6 +151,12 @@
     <Compile Include="FormsStaff\FormInventoty.Designer.cs">
       <DependentUpon>FormInventoty.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsStaff\FormProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsStaff\FormProduct.Designer.cs">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsStaff\FormInventoty.resx">
       <DependentUpon>FormInventoty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsStaff\FormProduct.resx">
+      <DependentUpon>FormProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

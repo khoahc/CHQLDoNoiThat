@@ -92,6 +92,11 @@ namespace CHQLDoNoiThat
             OpenChildForm(new FormsStaff.FormBill(), sender);
         }
 
+        private void btnSanPham_FNhanVien_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            OpenChildForm(new FormsStaff.FormProduct(), sender);
+        }
         private void btnKho_FNhanVien_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
